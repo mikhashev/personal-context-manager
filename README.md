@@ -29,9 +29,9 @@ This project is intended exclusively for civilian purposes: improving education,
 
 If you would like to support further development and promotion of the technology, you can send a donation to the following addresses:
 
-- Bitcoin: [wallet address]
-- Ethereum: [wallet address]
-- TON: []
+- Bitcoin: [bc1qfev88vx2yem48hfj04udjgn3938afg5yvdr92x]
+- Ethereum: [0xB019Ae32a98fd206881f691fFe021A2B2520Ce9d]
+- TON: [UQDWa0-nCyNM1jghk1PBRcjBt4Lxvs86wflNGHHQtxfyx-8J]
 
 ## License
 
