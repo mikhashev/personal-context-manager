@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this technology, please cite it as below."
+authors:
+  - family-names: "Shevchenko"
+    given-names: "Mikhail"
+    orcid: "https://orcid.org/0009-0006-1475-7268"
+title: "Personal Context Technology for AI Personalization"
+version: 1.0.0
+doi: 10.5281/zenodo.15037784
+url: "https://github.com/mikhashev/personal-context-manager"
+type: "software"
+keywords:
+  - ai-personalization
+  - context-management
+  - personal-data
+  - defensive-publication
+  - open-source-technology
+license: CC0-1.0
+repository-code: "https://github.com/mikhashev/personal-context-manager"
+abstract: >-
+  This technology solves a fundamental limitation of modern AI systems — 
+  the lack of long-term memory between sessions. The core principle involves 
+  transferring structured data with a mandatory instruction block that defines 
+  the rules for processing them, enabling personalized AI interactions while 
+  preserving user privacy and control.
