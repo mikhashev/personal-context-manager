@@ -1,6 +1,3 @@
-Here's the complete CONTRIBUTING.md file for your repository:
-
-```markdown
 # Contributing to Personal Context Technology
 
 Thank you for your interest in contributing to this project! This document provides guidelines and instructions for contributing to make the process smooth and effective for everyone involved.
@@ -173,6 +170,3 @@ By contributing to this project, you agree that your contributions will be licen
 ## Thank You!
 
 Your contributions help make personal context technology accessible and useful for everyone. We appreciate your time and effort in helping this project grow!
-```
-
-This CONTRIBUTING.md file provides comprehensive guidelines for potential contributors to your project. It covers various types of contributions (not just code), explains the process for submitting changes, emphasizes ethical considerations, and outlines community standards. The document is structured to be welcoming and informative for both technical and non-technical contributors, encouraging participation while maintaining the project's ethical standards.

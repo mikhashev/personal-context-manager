@@ -1,6 +1,3 @@
-Here's the complete CODE_OF_CONDUCT.md file for your repository:
-
-```markdown
 # Code of Conduct
 
 ## Our Pledge
@@ -89,6 +86,3 @@ The Personal Context Technology has been designed with human well-being as its p
    * Prioritize solutions that enhance human connection and well-being
 
 By participating in this project, you agree to uphold these values and contribute to the development of technology that serves humanity's best interests.
-```
-
-This Code of Conduct combines standard community guidelines with ethical considerations specific to your personal context technology. It establishes clear expectations for community behavior while emphasizing the importance of responsible use, privacy, transparency, and accessibility. The document also explicitly prohibits harmful applications like military use, surveillance, and manipulation, which aligns with your goal of minimizing risks while making the technology openly available.

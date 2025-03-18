@@ -478,4 +478,3 @@ To ensure the widest possible adoption and prevent monopolization, this technolo
    - User-controlled encryption
 
 This openness ensures that the technology remains accessible to everyone and can evolve through community contributions rather than being controlled by a single entity.
-```
