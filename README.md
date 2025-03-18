@@ -20,6 +20,7 @@ This technology solves a fundamental limitation of modern AI systems — the lac
 ## Documentation
 
 Full technical description is available in [technical-description.md](docs/technical-description.md).
+Quick start guide is available in [simple-guide.md](docs/simple-guide.md).
 
 ## Ethical Principles
 
