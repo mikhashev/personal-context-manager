@@ -1,0 +1,257 @@
+{
+  "basic_info": {
+    "name": "[Your Friend's Name]",
+    "learning_goals": [
+      "Develop expertise in [specific subject area]",
+      "Build a structured knowledge base that connects concepts across domains",
+      "Improve retention and recall of learned material",
+      "Apply knowledge practically to solve real-world problems"
+    ],
+    "learning_style_preferences": [
+      "Visual learning through diagrams and charts",
+      "Active learning through problem-solving",
+      "Conceptual learning that connects ideas"
+    ],
+    "current_knowledge_level": {
+      "beginner": ["Topic A", "Topic B"],
+      "intermediate": ["Topic C", "Topic D"],
+      "advanced": ["Topic E"]
+    }
+  },
+  
+  "cognitive_profile": {
+    "memory_strengths": [
+      "Visual information retention",
+      "Conceptual understanding"
+    ],
+    "memory_challenges": [
+      "Retaining isolated facts",
+      "Maintaining focus for extended periods"
+    ],
+    "optimal_learning_times": {
+      "peak_focus_hours": ["8:00-10:00", "16:00-18:00"],
+      "review_periods": ["Before sleep", "Early morning"]
+    },
+    "attention_span": {
+      "focused_work": "25 minutes",
+      "optimal_break": "5 minutes",
+      "daily_capacity": "4-5 hours of deep learning"
+    }
+  },
+  
+  "learning_strategies": {
+    "active_recall": {
+      "description": "Testing yourself on material to strengthen neural connections",
+      "implementation": [
+        "Create question sets for each learning session",
+        "Use spaced repetition scheduling for review sessions",
+        "Test knowledge application through problem-solving",
+        "Explain concepts in your own words (Feynman Technique)"
+      ],
+      "tools": [
+        "Anki for flashcard-based recall",
+        "Practice tests and quizzes",
+        "Self-questioning during reading"
+      ]
+    },
+    
+    "spaced_repetition": {
+      "description": "Reviewing information at increasing intervals to optimize retention",
+      "implementation": [
+        "Review new information within 24 hours of first exposure",
+        "Schedule follow-up reviews at 3 days, 1 week, 2 weeks, 1 month",
+        "Increase intervals for well-remembered information",
+        "Decrease intervals for challenging material"
+      ],
+      "tools": [
+        "Anki's built-in spaced repetition algorithm",
+        "Calendar reminders for scheduled reviews",
+        "Learning journal to track review cycles"
+      ]
+    },
+    
+    "elaborative_encoding": {
+      "description": "Connecting new information to existing knowledge",
+      "implementation": [
+        "Create concept maps linking ideas together",
+        "Find real-world applications for theoretical concepts",
+        "Relate new learning to personal experiences",
+        "Identify similarities and differences with known concepts"
+      ],
+      "tools": [
+        "Mind mapping software",
+        "Comparative tables and matrices",
+        "Analogies and metaphors"
+      ]
+    },
+    
+    "cognitive_load_management": {
+      "description": "Optimizing mental effort to facilitate learning",
+      "implementation": [
+        "Break complex topics into manageable chunks",
+        "Focus on understanding fundamentals before details",
+        "Alternate between different types of learning activities",
+        "Scaffold learning with structured frameworks"
+      ],
+      "tools": [
+        "Outlines and learning roadmaps",
+        "Pomodoro technique for focused sessions",
+        "Environmental controls to reduce distractions"
+      ]
+    },
+    
+    "sleep_and_memory": {
+      "description": "Optimizing sleep patterns to enhance memory consolidation",
+      "implementation": [
+        "Review important material shortly before sleep",
+        "Maintain consistent sleep schedule",
+        "Prioritize quality sleep (7-9 hours) for memory consolidation",
+        "Schedule challenging learning in the morning"
+      ],
+      "tools": [
+        "Sleep tracking app",
+        "Pre-sleep review routine",
+        "Morning review of previous day's learning"
+      ]
+    }
+  },
+  
+  "ai_integration": {
+    "ai_strengths_for_learning": [
+      "Providing diverse explanations of difficult concepts",
+      "Generating practice questions and scenarios",
+      "Offering structured frameworks for complex topics",
+      "Helping identify knowledge gaps",
+      "Assisting with knowledge synthesis and connections"
+    ],
+    
+    "ai_limitations": {
+      "context_limitations": {
+        "description": "LLMs have a limited context window (working memory)",
+        "implications": [
+          "Cannot maintain awareness of entire learning history",
+          "May miss connections across separate conversations",
+          "Needs frequent reminders of learning context"
+        ],
+        "mitigation": [
+          "Regularly update this context file with new learning",
+          "Reference previous conversations explicitly",
+          "Chunk learning topics for focused AI interactions"
+        ]
+      },
+      
+      "hallucinations": {
+        "description": "LLMs can generate plausible but incorrect information",
+        "implications": [
+          "Cannot be solely relied upon for factual accuracy",
+          "May introduce misconceptions if not verified",
+          "Confidence in response is not correlated with accuracy"
+        ],
+        "mitigation": [
+          "Verify important facts from authoritative sources",
+          "Ask AI to provide reasoning and evidence",
+          "Use AI primarily for learning methods rather than as the sole source of facts",
+          "Request citations when asking for factual information"
+        ]
+      },
+      
+      "knowledge_cutoff": {
+        "description": "LLMs have a training cutoff date with no newer information",
+        "implications": [
+          "May lack awareness of recent developments",
+          "Cannot provide up-to-date research or findings"
+        ],
+        "mitigation": [
+          "Supplement AI guidance with recent literature",
+          "Use web search when discussing evolving topics",
+          "Update context file with recent findings"
+        ]
+      }
+    },
+    
+    "effective_prompting": {
+      "learning_prompts": [
+        "Explain [concept] using multiple analogies from different domains",
+        "Generate a set of practice questions that test application of [concept]",
+        "Create a framework for understanding the relationship between [concept A] and [concept B]",
+        "What are common misconceptions about [topic] and how can I avoid them?",
+        "How would you structure a learning plan for mastering [topic] in [timeframe]?"
+      ],
+      "metacognitive_prompts": [
+        "What questions should I be asking myself to deepen my understanding of [topic]?",
+        "What mental models would be most useful for thinking about [domain]?",
+        "How can I test whether I truly understand [concept] versus just recognizing it?",
+        "What would be effective ways to connect [new concept] to [existing knowledge]?"
+      ],
+      "retrieval_practice_prompts": [
+        "Based on our previous discussions about [topic], what concepts do you think I should review?",
+        "Can you generate a mini-quiz about [topic] we discussed [timeframe] ago?",
+        "What connections exist between [previous topic] and [current topic]?"
+      ]
+    }
+  },
+  
+  "learning_progress": {
+    "current_focus": {
+      "topic": "[Current Learning Topic]",
+      "resources": ["[Resource 1]", "[Resource 2]"],
+      "started": "[Start Date]",
+      "target_completion": "[Target Date]",
+      "key_milestones": [
+        {
+          "milestone": "[Milestone 1]",
+          "status": "completed/in progress/planned",
+          "notes": "[Any observations or insights]"
+        }
+      ]
+    },
+    
+    "completed_topics": [
+      {
+        "topic": "[Completed Topic]",
+        "completion_date": "[Date]",
+        "mastery_level": "basic/intermediate/advanced",
+        "key_insights": ["[Insight 1]", "[Insight 2]"],
+        "areas_for_review": ["[Area 1]", "[Area 2]"]
+      }
+    ],
+    
+    "knowledge_connections": [
+      {
+        "topics": ["[Topic A]", "[Topic B]"],
+        "relationship": "[How these topics connect]",
+        "application": "[How this connection is useful]"
+      }
+    ]
+  },
+  
+  "instruction": {
+    "primary": "Use this context to provide personalized learning guidance that accounts for my cognitive profile, preferred learning strategies, and current knowledge level. Help me implement evidence-based learning techniques with a focus on long-term retention and practical application.",
+    
+    "learning_support": {
+      "explanations": "Provide explanations that connect to my existing knowledge and learning style preferences",
+      "practice": "Generate questions and scenarios that employ active recall and application of concepts",
+      "metacognition": "Help me reflect on my learning process and identify strategies for improvement",
+      "connections": "Identify relationships between new concepts and previously learned material"
+    },
+    
+    "context_update": "When I share new learning progress or insights, suggest specific updates to this context file to maintain its relevance. Ask questions to clarify my learning experiences when needed.",
+    
+    "verification_protocol": "For factual information, provide reasoning and evidence for your responses. Clearly indicate when information might be uncertain or when verification from other sources would be beneficial.",
+    
+    "adaptive_approach": "Adjust your support based on my reported progress and challenges. If I'm struggling with a concept, offer alternative explanations or approaches tailored to my cognitive profile."
+  },
+  
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-03-25",
+    "last_updated": "2025-03-25",
+    "update_history": [
+      {
+        "date": "2025-03-25",
+        "changes": "Initial creation",
+        "updated_by": "User"
+      }
+    ]
+  }
+}
