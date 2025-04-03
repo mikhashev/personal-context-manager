@@ -448,6 +448,7 @@ Implementation of this technology can impact several key areas of the economy:
                                    └───────────────────┘                 └───────────────────┘
 
 ```
+[schema.png](docs/img/schema.png)
 
 This diagram demonstrates the key components of the technology and their interaction:
 1. User creates structured data with instructions
@@ -478,3 +479,60 @@ To ensure the widest possible adoption and prevent monopolization, this technolo
    - User-controlled encryption
 
 This openness ensures that the technology remains accessible to everyone and can evolve through community contributions rather than being controlled by a single entity.
+
+## Comparison with Other Approaches
+
+Personal Context Technology (PCT) is not the only approach to enhancing AI interactions, and it’s useful to understand how it differs from other methods. Below is a comparison with several notable technologies and frameworks.
+
+### Retrieval-Augmented Generation (RAG)
+RAG, as implemented in systems like ChatGPT ([RAG for GPTs](https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts)), enhances AI responses by retrieving relevant information from external documents in real-time. When a user asks a question, RAG uses semantic search to find pertinent data and incorporates it into the AI’s response.
+
+- **Difference**: RAG focuses on retrieving external knowledge to improve factual accuracy, whereas PCT focuses on long-term personalization by providing a structured user profile. RAG treats a context file as a document to search through, not as an instruction for tailoring responses. For example, if a PCT file specifies a preference for visual explanations, an AI using PCT will consistently provide diagrams, while RAG might only mention this preference if explicitly asked.
+- **Use Case**: RAG is ideal for fact-based queries, while PCT is better for personalized, user-centric interactions like education.
+
+### Memory in ChatGPT
+ChatGPT introduced a memory feature ([Memory and New Controls for ChatGPT](https://openai.com/index/memory-and-new-controls-for-chatgpt/)) that allows the AI to automatically remember details from user conversations. For instance, if a user mentions a preference for visual learning, ChatGPT can recall this in future interactions.
+
+- **Difference**: ChatGPT’s memory is an automatic, server-side feature that collects data during conversations and stores it on OpenAI’s servers. PCT, in contrast, is a user-controlled, structured file that the user creates and maintains locally or in a chosen storage location. PCT provides deeper personalization by allowing users to specify complex details (e.g., cognitive profiles, learning schedules), while ChatGPT’s memory is more surface-level and depends on what the user mentions in dialogue.
+- **Privacy**: PCT prioritizes user control and privacy, as data is not automatically shared with the AI provider, unlike ChatGPT’s memory, which requires trust in OpenAI’s data handling practices.
+
+### DeepMind’s Gemini Personalization
+DeepMind’s approach to personalization, as seen in Gemini ([Gemini Personalization](https://blog.google/products/gemini/gemini-personalization/)), involves collecting user data (e.g., search history, interaction patterns) to tailor AI responses. This is often done through machine learning models that adapt to user behavior over time.
+
+- **Difference**: DeepMind’s personalization is an automated, server-side process that relies on continuous data collection. PCT, however, is a manual, user-driven framework where the user explicitly defines their context in a structured file. This gives users more control over what data is shared and ensures transparency, as opposed to DeepMind’s more opaque, algorithm-driven approach.
+- **Flexibility**: PCT allows users to update their context file at any time, while DeepMind’s personalization depends on the system’s ability to infer user preferences, which may not always be accurate.
+
+### DeepSeek
+DeepSeek is an open-source AI model focused on research and development, often used for tasks requiring high accuracy and reasoning ([DeepSeek GitHub](https://github.com/deepseek-ai)). It excels in natural language understanding and can be fine-tuned for specific applications, but it does not have a built-in mechanism for long-term user personalization.
+
+- **Difference**: DeepSeek primarily focuses on improving response quality through advanced training and fine-tuning, rather than maintaining user context across sessions. PCT, on the other hand, is specifically designed to provide a persistent user context, enabling the AI to adapt responses based on user-defined preferences and progress. DeepSeek could potentially use a PCT file if integrated, but it lacks a native framework for such personalization.
+- **Use Case**: DeepSeek is better suited for research or technical queries, while PCT enhances user-specific applications like education.
+
+### Grok by xAI
+Grok, developed by xAI, is an AI designed to assist users in understanding complex topics, with a focus on truthfulness and helpfulness ([xAI Grok](https://x.ai/grok)). It supports long context windows and can process structured data, making it compatible with PCT.
+
+- **Difference**: Grok does not have a native personalization mechanism like PCT. Without a context file, Grok relies on the user to provide context in each session, which can lead to repetitive interactions. PCT complements Grok by providing a structured, reusable context that ensures consistency across sessions. For example, a PCT file can instruct Grok to always provide visual explanations, a feature Grok would not inherently prioritize without such guidance.
+- **Compatibility**: Grok’s ability to handle long contexts makes it well-suited for PCT, as it can process the entire context file and follow its instructions effectively.
+
+## Ethical Considerations
+
+PCT is designed with ethical principles in mind, as outlined in the [Ethical Guidelines](ETHICAL_GUIDELINES.md). Key considerations include:
+
+- **User Control**: Users maintain full control over their data, with no automatic collection by the AI system.
+- **Transparency**: The framework ensures that data usage is clear and understandable to users.
+- **Prohibited Uses**: PCT must not be used for military applications, mass surveillance, or manipulation of public opinion.
+
+## Implementation Recommendations
+
+To implement PCT effectively, consider the following:
+
+1. **Data Structure**: Use a structured format like JSON for the context file, ensuring it includes sections for user goals, preferences, and progress.
+2. **Instruction Block**: Clearly define how the AI should use the data, such as prioritizing certain response styles or learning strategies.
+3. **Privacy**: Store context files locally or in a secure cloud environment, and avoid sharing sensitive information unless necessary.
+4. **Updates**: Regularly update the context file to reflect changes in user progress or preferences.
+
+For a practical example, see the [Quick Start Guide](docs/simple-guide.md).
+
+## License
+
+This project is released under the CC0 1.0 Universal License. See [LICENSE](LICENSE) for details.
