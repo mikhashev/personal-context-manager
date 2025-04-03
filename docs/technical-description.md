@@ -448,7 +448,7 @@ Implementation of this technology can impact several key areas of the economy:
                                    └───────────────────┘                 └───────────────────┘
 
 ```
-[schema.png](docs/img/schema.png)
+[schema.png](img/schema.png)
 
 This diagram demonstrates the key components of the technology and their interaction:
 1. User creates structured data with instructions
