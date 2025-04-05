@@ -38,6 +38,11 @@ Files:
 - [Personal Context Template for Self-Education](use-cases/self-education/personal_context_self_education_template.json)
 - [How to Use Personal Context Template for AI-Enhanced Learning](use-cases/self-education/README.md)
 
+## MCP Model Context Protocol support
+
+[Server for Personal Context Technology (PCT) using the Model Context Protocol (MCP)](https://github.com/mikhashev/pct-mcp-server)
+It enables AI assistants like Claude to access and update your personalized context data, creating persistent memory between sessions.
+
 ## Ethical Principles
 
 This project is intended exclusively for civilian purposes: improving education, healthcare, increasing productivity, and personalizing AI interaction. Please review the [ethical guidelines](ETHICAL_GUIDELINES.md) before use.
