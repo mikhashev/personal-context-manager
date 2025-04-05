@@ -5,8 +5,8 @@ authors:
     given-names: "Mikhail"
     orcid: "https://orcid.org/0009-0006-1475-7268"
 title: "Personal Context Technology for AI Personalization"
-version: 1.0.0
-doi: 10.5281/zenodo.15037784
+version: 1.0.2
+doi: 10.5281/zenodo.15149256
 url: "https://github.com/mikhashev/personal-context-manager"
 type: "software"
 keywords:
