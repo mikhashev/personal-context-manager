@@ -6,13 +6,13 @@ This technology relates to information technologies, specifically to personalizi
 
 ## Current Technology Level
 
-Modern AI chats (Grok, ChatGPT, Claude, etc.) do not have long-term memory about the user between sessions, losing context after the dialogue ends. Testing shows that 98% of information provided to AI in one session becomes unavailable when starting a new session. Existing solutions have drawbacks:
+Modern AI chats (Grok, ChatGPT, Claude, etc.) do not have long-term memory about the user between sessions, losing context after the dialogue ends. Our preliminary testing indicates that most information provided to AI in one session becomes unavailable when starting a new session. Existing solutions have drawbacks:
 
-1. **Cloud storage** requires transferring sensitive data to third parties, creating security and privacy risks (70% of users express concern, according to research).
+1. **Cloud storage** requires transferring sensitive data to third parties, creating security and privacy risks (many users express concern about this approach).
 
-2. **Built-in memory of AI systems** has technical limitations (usually 2-10 previous messages) and can be deleted by the service provider at any time.
+2. **Built-in memory of AI systems** has technical limitations (usually limited to previous messages) and can be deleted by the service provider at any time.
 
-3. **Manual re-entry of context** takes 15-20 minutes with each new session, reducing productivity by 30-40% with regular use.
+3. **Manual re-entry of context** requires significant time investment with each new session, reducing productivity with regular use.
 
 The market lacks solutions that allow users to structure, store, and transfer personalized context to AI systems without relying on cloud storage or internal AI memory, with a key management mechanism through instructions.
 
@@ -36,28 +36,28 @@ A key feature and integral part of the technology is the inclusion of an instruc
 
 ## Technical Result
 
-The technology provides the following measurable benefits:
+The technology provides the following benefits:
 
-1. **Eliminating the lack of long-term memory in AI chats**:
-   - Preservation of 100% relevant context between sessions
-   - Reducing context input time by 95% compared to manual entry (from 15-20 minutes to 15-30 seconds)
+1. **Addressing the lack of long-term memory in AI chats**:
+   - Comprehensive preservation of relevant context between sessions
+   - Substantial time savings compared to manual context re-entry
 
 2. **Flexibility in using various data formats**:
-   - Support for any structured data that AI can process
-   - 95% probability of compatibility with various AI systems
+   - Support for multiple structured data formats that AI can process
+   - Compatibility with various AI systems
 
 3. **Increased user control over data**:
    - Choice of storage location (local/cloud)
    - Ability to selectively provide information to AI
-   - Management through instructions with 90% execution accuracy
+   - Management through instruction blocks
 
-4. **Increased recommendation accuracy**:
-   - Up to 85% relevant answers versus 60% without context (measured on a sample of 100 different requests)
-   - 75% reduction in the need for repeated clarifications
+4. **Improved recommendation relevance**:
+   - More targeted answers through contextual personalization
+   - Reduction in the need for repeated clarifications
 
-5. **Time savings**:
-   - 5-10 hours per week for active AI users
-   - 40-60% reduction in dialogue length while maintaining response quality
+5. **Time efficiency**:
+   - Significant time savings for active AI users
+   - More concise dialogues while maintaining response quality
 
 ## Process Description
 
@@ -101,7 +101,7 @@ The method includes the following steps:
    - Sends through API
    - Provides a link to storage with configured access
    
-   Transfer time is 15-30 seconds versus 15-20 minutes when manually recreating context. Data can be transferred in full or selectively based on access instructions.
+   This approach significantly reduces context transfer time compared to manually recreating context. Data can be transferred in full or selectively based on access instructions.
 
 4. **Processing data and instructions by artificial intelligence**
 
@@ -129,8 +129,8 @@ The method includes the following steps:
    The process continues in new sessions:
    - Updated version of data is transferred during a new session
    - AI receives the full context from previous interactions
-   - Volume of repeated explanations is reduced by 90-95%
-   - Accuracy and personalization of responses are increased
+   - Volume of repeated explanations is substantially reduced
+   - Relevance and personalization of responses are increased
    - Continuity of interaction between sessions is ensured
 
 ## Advantages Over Existing Approaches
@@ -142,13 +142,13 @@ The method includes the following steps:
    - Independence from a specific AI provider
 
 2. **Compared to built-in AI memory**:
-   - Unlimited data volume (versus a limit of ~10 messages)
+   - Extended data capacity compared to message-based history
    - Independence from the AI provider (compatibility with any AI)
    - Resilience to history clearing or system failures
    - Ability to structure and categorize data
 
 3. **Compared to manual context**:
-   - Time savings of up to 95% per session
+   - Significant time savings per session
    - Structured and accurate information
    - Consistency of data between sessions
    - Ability to update data based on conversation results
@@ -279,7 +279,7 @@ metadata:
 
 The corporate AI system receives the YAML via API with authorization and checks the user's access level. The team leader with access level 3 receives complete information, including private notes, while junior developers see only basic information and public project data.
 
-### Example a3: Using graph data structure
+### Example 3: Using graph data structure
 
 A user creates a graph structure in DOT format to visualize connections between goals and tasks:
 
@@ -361,6 +361,16 @@ sync:
 
 When interacting with AI, the user transfers `instructions.yaml` and links to the other files. The AI follows instructions for accessing, processing, and updating each file according to its format and update rules, while maintaining the integrity of the entire context.
 
+## Future Benchmarking
+
+We are developing a comprehensive benchmarking framework to quantify the performance improvements provided by PCM technology. Our preliminary testing indicates substantial benefits in several key areas:
+
+- **Context preservation** between sessions compared to traditional approaches
+- **Recommendation accuracy** enhancement through contextual personalization
+- **Response time optimization** through efficient context transfer
+
+Detailed benchmarking methodology and results will be published as our testing program progresses. The benchmarking will include controlled comparisons with baseline approaches, documented test cases, and reproducible methodologies.
+
 ## Social Impact
 
 This technology has the potential to:
@@ -376,8 +386,8 @@ This technology has the potential to:
    - Create new positions like "context curators" and "personal data architects" in large organizations
 
 3. **Improve healthcare and personal well-being**
-   - Significantly increase healthcare efficiency through complete medical context of the patient
-   - Improve disease prevention through continuous analysis of personal data
+   - Enhance healthcare efficiency through improved medical context of the patient
+   - Support disease prevention through continuous analysis of personal data
    - Develop new telemedicine models based on contextual information
 
 4. **New understanding of privacy**
@@ -385,34 +395,34 @@ This technology has the potential to:
    - Formation of new social norms regarding which aspects of personal context are appropriate to make available to different AI systems
    - Increasing importance of "information hygiene" and regular personal data audits
 
-## Economic Impact
+## Market Potential
 
-Implementation of this technology can impact several key areas of the economy:
+Implementation of this technology may impact several key areas:
 
-1. **Effect on the AI assistant market**
-   - 40-60% increase in interaction efficiency due to continuous context
-   - 30-50% growth in AI assistant usage due to personalization
+1. **AI assistant market**
+   - Increased interaction efficiency due to continuous context
+   - Growth in AI assistant usage due to personalization
    - New category of "personal AI" with long-term memory
 
 2. **Corporate sector**
-   - 40-60% reduction in loss of corporate knowledge when employees change
-   - 30-50% increase in training efficiency for new employees
-   - 5-15% productivity growth for knowledge workers due to more accurate recommendations
+   - Reduction in loss of corporate knowledge when employees change
+   - Improved training efficiency for new employees
+   - Potential productivity improvements for knowledge workers due to more accurate recommendations
 
 3. **Personal data market and privacy**
-   - Shift from cloud data storage to local/hybrid (share of local storage will grow from 15% to 40-45%)
-   - Emergence of a new market for tools for encrypting and managing personal data ($3-7 billion by 2027)
-   - 30-40% reduction in risk of major data leaks through storage decentralization
+   - Shift from cloud data storage to local/hybrid approaches
+   - Development of tools for encrypting and managing personal data
+   - Potential reduction in risk of data leaks through storage decentralization
 
 4. **Technology startups**
-   - Creation of 200-300 startups around the personal context ecosystem (2025-2028)
-   - Venture capital investment of $1.5-2.5 billion in the first three years after mass adoption
-   - 3-5 new unicorns (companies worth >$1 billion) in this segment by 2030
+   - Creation of startups around the personal context ecosystem
+   - Opportunity for venture capital investment in this emerging field
+   - Potential for innovation in personalized AI applications
 
 5. **Education and human capital**
-   - 20-30% increase in education efficiency through personalized context
-   - 15-25% reduction in the cost of continuing education
-   - Development of new professions of "personal context architects" (30-50 thousand specialists by 2028)
+   - Improvements in education efficiency through personalized context
+   - Potential reduction in continuing education costs
+   - Development of new specialized roles in context management
 
 ## Technology Diagram
 
@@ -482,10 +492,10 @@ This openness ensures that the technology remains accessible to everyone and can
 
 ## Comparison with Other Approaches
 
-Personal Context Technology (PCT) is not the only approach to enhancing AI interactions, and it’s useful to understand how it differs from other methods. Below is a comparison with several notable technologies and frameworks.
+Personal Context Technology (PCT) is not the only approach to enhancing AI interactions, and it's useful to understand how it differs from other methods. Below is a comparison with several notable technologies and frameworks.
 
 ### Retrieval-Augmented Generation (RAG)
-RAG, as implemented in systems like ChatGPT ([RAG for GPTs](https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts)), enhances AI responses by retrieving relevant information from external documents in real-time. When a user asks a question, RAG uses semantic search to find pertinent data and incorporates it into the AI’s response.
+RAG, as implemented in systems like ChatGPT ([RAG for GPTs](https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts)), enhances AI responses by retrieving relevant information from external documents in real-time. When a user asks a question, RAG uses semantic search to find pertinent data and incorporates it into the AI's response.
 
 - **Difference**: RAG focuses on retrieving external knowledge to improve factual accuracy, whereas PCT focuses on long-term personalization by providing a structured user profile. RAG treats a context file as a document to search through, not as an instruction for tailoring responses. For example, if a PCT file specifies a preference for visual explanations, an AI using PCT will consistently provide diagrams, while RAG might only mention this preference if explicitly asked.
 - **Use Case**: RAG is ideal for fact-based queries, while PCT is better for personalized, user-centric interactions like education.
@@ -493,14 +503,14 @@ RAG, as implemented in systems like ChatGPT ([RAG for GPTs](https://help.openai.
 ### Memory in ChatGPT
 ChatGPT introduced a memory feature ([Memory and New Controls for ChatGPT](https://openai.com/index/memory-and-new-controls-for-chatgpt/)) that allows the AI to automatically remember details from user conversations. For instance, if a user mentions a preference for visual learning, ChatGPT can recall this in future interactions.
 
-- **Difference**: ChatGPT’s memory is an automatic, server-side feature that collects data during conversations and stores it on OpenAI’s servers. PCT, in contrast, is a user-controlled, structured file that the user creates and maintains locally or in a chosen storage location. PCT provides deeper personalization by allowing users to specify complex details (e.g., cognitive profiles, learning schedules), while ChatGPT’s memory is more surface-level and depends on what the user mentions in dialogue.
-- **Privacy**: PCT prioritizes user control and privacy, as data is not automatically shared with the AI provider, unlike ChatGPT’s memory, which requires trust in OpenAI’s data handling practices.
+- **Difference**: ChatGPT's memory is an automatic, server-side feature that collects data during conversations and stores it on OpenAI's servers. PCT, in contrast, is a user-controlled, structured file that the user creates and maintains locally or in a chosen storage location. PCT provides deeper personalization by allowing users to specify complex details (e.g., cognitive profiles, learning schedules), while ChatGPT's memory is more surface-level and depends on what the user mentions in dialogue.
+- **Privacy**: PCT prioritizes user control and privacy, as data is not automatically shared with the AI provider, unlike ChatGPT's memory, which requires trust in OpenAI's data handling practices.
 
-### DeepMind’s Gemini Personalization
-DeepMind’s approach to personalization, as seen in Gemini ([Gemini Personalization](https://blog.google/products/gemini/gemini-personalization/)), involves collecting user data (e.g., search history, interaction patterns) to tailor AI responses. This is often done through machine learning models that adapt to user behavior over time.
+### DeepMind's Gemini Personalization
+DeepMind's approach to personalization, as seen in Gemini ([Gemini Personalization](https://blog.google/products/gemini/gemini-personalization/)), involves collecting user data (e.g., search history, interaction patterns) to tailor AI responses. This is often done through machine learning models that adapt to user behavior over time.
 
-- **Difference**: DeepMind’s personalization is an automated, server-side process that relies on continuous data collection. PCT, however, is a manual, user-driven framework where the user explicitly defines their context in a structured file. This gives users more control over what data is shared and ensures transparency, as opposed to DeepMind’s more opaque, algorithm-driven approach.
-- **Flexibility**: PCT allows users to update their context file at any time, while DeepMind’s personalization depends on the system’s ability to infer user preferences, which may not always be accurate.
+- **Difference**: DeepMind's personalization is an automated, server-side process that relies on continuous data collection. PCT, however, is a manual, user-driven framework where the user explicitly defines their context in a structured file. This gives users more control over what data is shared and ensures transparency, as opposed to DeepMind's more opaque, algorithm-driven approach.
+- **Flexibility**: PCT allows users to update their context file at any time, while DeepMind's personalization depends on the system's ability to infer user preferences, which may not always be accurate.
 
 ### DeepSeek
 DeepSeek is an open-source AI model focused on research and development, often used for tasks requiring high accuracy and reasoning ([DeepSeek GitHub](https://github.com/deepseek-ai)). It excels in natural language understanding and can be fine-tuned for specific applications, but it does not have a built-in mechanism for long-term user personalization.
@@ -512,7 +522,7 @@ DeepSeek is an open-source AI model focused on research and development, often u
 Grok, developed by xAI, is an AI designed to assist users in understanding complex topics, with a focus on truthfulness and helpfulness ([xAI Grok](https://x.ai/grok)). It supports long context windows and can process structured data, making it compatible with PCT.
 
 - **Difference**: Grok does not have a native personalization mechanism like PCT. Without a context file, Grok relies on the user to provide context in each session, which can lead to repetitive interactions. PCT complements Grok by providing a structured, reusable context that ensures consistency across sessions. For example, a PCT file can instruct Grok to always provide visual explanations, a feature Grok would not inherently prioritize without such guidance.
-- **Compatibility**: Grok’s ability to handle long contexts makes it well-suited for PCT, as it can process the entire context file and follow its instructions effectively.
+- **Compatibility**: Grok's ability to handle long contexts makes it well-suited for PCT, as it can process the entire context file and follow its instructions effectively.
 
 ## Ethical Considerations
 
