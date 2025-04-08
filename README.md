@@ -14,8 +14,23 @@ This technology solves a fundamental limitation of modern AI systems — the lac
 - Support for various data formats (JSON, YAML, XML, graph structures)
 - Choice of data storage location (local/cloud)
 - Personalization management through instructions
-- Increasing recommendation accuracy to 85% (versus 60% without context)
-- Reducing context transfer time by 95%
+- Increasing recommendation accuracy
+- Reducing context transfer time
+
+## Self-Improving Context Framework
+
+We've developed a framework that enables context structures to evolve and improve over time based on usage patterns, neural feedback, and effectiveness metrics. Key components include:
+
+- **Self-improvement tracking** - Automatically identifies patterns in context effectiveness
+- **Neural interface integration** - Correlates brain activity with context performance using Muse, EMOTIV, and OpenBCI devices
+- **Context evolution analysis** - Tracks changes over time and recommends structural improvements
+- **Instruction optimization** - Tests and adapts instruction blocks to improve AI responses
+
+This framework takes personalization to the next level by enabling continuous adaptation based on real-world performance data.
+
+- [Implementation Code](self-improvement/README.md)
+- [Framework Documentation](docs/self-improvement-framework.md)
+- [Visual Diagrams](docs/self-improvement-diagrams.md)
 
 ## Documentation
 
