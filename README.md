@@ -22,11 +22,13 @@ This technology solves a fundamental limitation of modern AI systems — the lac
 We've developed a framework that enables context structures to evolve and improve over time based on usage patterns, neural feedback, and effectiveness metrics. Key components include:
 
 - **Self-improvement tracking** - Automatically identifies patterns in context effectiveness
-- **Neural interface integration** - Correlates brain activity with context performance using Muse, EMOTIV, and OpenBCI devices
+- **Neural interface integration** - Framework for correlating brain activity with context performance using EEG devices
 - **Context evolution analysis** - Tracks changes over time and recommends structural improvements
 - **Instruction optimization** - Tests and adapts instruction blocks to improve AI responses
 
 This framework takes personalization to the next level by enabling continuous adaptation based on real-world performance data.
+
+> **Note:** While the neural interface integration framework is implemented in code, it has not yet been tested with actual EEG hardware devices. The integration with Muse, EMOTIV, and OpenBCI exists at the code level and is ready for testing with physical devices.
 
 - [Implementation Code](self-improvement/README.md)
 - [Framework Documentation](docs/self-improvement-framework.md)

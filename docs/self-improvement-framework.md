@@ -98,6 +98,7 @@ The self-improvement capability builds on several established fields:
 │                  │          │                  │
 └──────────────────┘          └──────────────────┘
 ```
+> **Implementation Status Note:** The neural interface feedback loop is currently implemented as a theoretical framework and code architecture. It has not yet been tested with physical EEG devices such as Muse, EMOTIV, or OpenBCI. The framework is designed to be hardware-agnostic and ready for integration with physical devices once they become available.
 
 ## 5. Self-Improvement Mechanisms
 

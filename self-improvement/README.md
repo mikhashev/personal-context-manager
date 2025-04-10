@@ -523,7 +523,9 @@ This framework supports integration with EEG devices from:
 - **EMOTIV**
 - **OpenBCI**
 
-Neural data is used to:
+> **Note on Implementation Status:** While the code architecture for integration with these neural interfaces is in place, it has not yet been tested with physical EEG hardware. The adapters and integration components are ready for testing with actual devices.
+
+Neural data is intended to be used to:
 
 1. Identify optimal cognitive states for different tasks
 2. Customize context presentation based on current neural state
