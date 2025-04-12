@@ -2,7 +2,13 @@
 
 **DEFENSIVE PUBLICATION**
 
-This publication is a defensive publication intended to prevent patenting of the described technology by any individuals or organizations. All information presented here is released into the public domain.
+This publication is a defensive publication intended to prevent patenting of the described technology by any individuals or organizations. The project was under CC0 1.0 Universal until April 12, 2025, and is now licensed under the MIT License (see LICENSE for details).
+
+## Notice for Forkers and Cloners
+
+As of April 12, 2025, Personal Context Manager (PCM) has switched from CC0 1.0 Universal to the MIT License to ensure attribution while remaining open-source. If you forked or cloned PCM before this date (e.g., forkers: AxiMinds, brucewedding, DRanger666, sgwd), your copy remains under CC0 1.0 terms. However, if you pull in new updates from the main repo, the MIT License will apply to those portions, requiring attribution (see [LICENSE_CHANGE.md](https://github.com/mikhashev/personal-context-manager/blob/main/LICENSE_CHANGE.md) for details).
+
+I’d love to collaborate! I’m currently working on features like Memoripy integration for memory decay (due April 30, 2025). If you’re interested in contributing or aligning your copy with the MIT License for future updates, please reach out via X (@mikeshev4enko) or email from my profile. Let’s work together to enhance PCM!
 
 ## About the Project
 
