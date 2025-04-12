@@ -5,16 +5,25 @@ Thank you for your interest in contributing to this project! This document provi
 ## Table of Contents
 
 1. [Code of Conduct](#code-of-conduct)
-2. [Types of Contributions](#types-of-contributions)
-3. [Getting Started](#getting-started)
-4. [Development Workflow](#development-workflow)
-5. [Pull Request Process](#pull-request-process)
-6. [Ethical Considerations](#ethical-considerations)
-7. [Community and Communication](#community-and-communication)
+2. [Contributor Rights](#contributor-rights)
+3. [Types of Contributions](#types-of-contributions)
+4. [Getting Started](#getting-started)
+5. [Development Workflow](#development-workflow)
+6. [Pull Request Process](#pull-request-process)
+7. [Ethical Considerations](#ethical-considerations)
+8. [Documentation Guidelines](#documentation-guidelines)
+9. [Community and Communication](#community-and-communication)
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [INSERT CONTACT METHOD].
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior by opening an issue on GitHub or contacting the project team at pcm-contact@proton.me.
+
+## Contributor Rights
+
+- **License**: By contributing to PCM, you agree to license your contribution under the MIT License (see [LICENSE](LICENSE)). You retain copyright to your contribution but grant the project owner and users the right to use, modify, and distribute it under MIT terms.
+- **Attribution**: Contributions are tracked in GitHub’s commit history. We recognize all contributors in our [CONTRIBUTORS.md](CONTRIBUTORS.md) file, but explicit attribution in the project (e.g., in a “Contributors” section) is not guaranteed.
+- **Project Control**: The project owner (Mike Shevchenko) retains full control over the project’s direction, including accepting/rejecting pull requests and setting the roadmap.
+- **Usage Rights**: As a contributor, you have the same rights as any user under the MIT License: you can use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the entire project, provided you include the original copyright notice and permission notice in all copies or substantial portions of the software.
 
 ## Types of Contributions
 
@@ -33,7 +42,7 @@ We welcome many types of contributions:
 - Automated update/sync mechanisms
 
 ### Templates and Schemas
-- Context templates for specific use cases (education, healthcare, productivity)
+- Context templates for specific use cases (education, healthcare, productivity and new other)
 - Schema definitions for different data formats
 - Access control patterns
 
@@ -65,7 +74,7 @@ We welcome many types of contributions:
    ```
 3. Add the original repository as an upstream remote:
    ```bash
-   git remote add upstream https://github.com/ORIGINAL_OWNER/personal-context-manager.git
+   git remote add upstream https://github.com/mikhashev/personal-context-manager.git
    ```
 
 ## Development Workflow
@@ -148,7 +157,6 @@ Documentation is crucial for this project. Please follow these guidelines:
 
 - Use GitHub Discussions for general questions and ideas
 - Use GitHub Issues for bugs and feature requests
-- Join our [Community Chat] for real-time discussion
 
 ### Decision Making Process
 
