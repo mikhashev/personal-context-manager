@@ -609,9 +609,9 @@ Please see [CONTRIBUTING.md](https://github.com/mikhashev/personal-context-manag
 
 ## Acknowledgments
 
-- Neural interface integration inspired by research from [citation needed]
-- Correlation algorithms adapted from open-source machine learning libraries
-- Self-optimization strategies informed by cognitive adaptation research
+- Neural interface integration inspired by research from Wolpaw, J. R., & Wolpaw, E. W. (2012). *Brain-Computer Interfaces: Principles and Practice*. Oxford University Press. https://doi.org/10.1093/acprof:oso/9780195388855.001.0001
+- Correlation algorithms adapted from open-source machine learning libraries, specifically Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research*, 12, 2825-2830. https://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html (GitHub: https://github.com/scikit-learn/scikit-learn)
+- Self-optimization strategies informed by cognitive adaptation research, notably Botvinick, M. M., & Cohen, J. D. (2014). The Computational and Neural Basis of Cognitive Control: Charted Territory and New Frontiers. *Cognitive Science*, 38(6), 1249-1285. https://doi.org/10.1111/cogs.12126
 
 ---
 
