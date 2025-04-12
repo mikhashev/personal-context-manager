@@ -545,4 +545,4 @@ For a practical example, see the [Quick Start Guide](docs/simple-guide.md).
 
 ## License
 
-This project is released under the CC0 1.0 Universal License. See [LICENSE](LICENSE) for details.
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.

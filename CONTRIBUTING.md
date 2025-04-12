@@ -165,7 +165,7 @@ All contributors will be recognized in our [CONTRIBUTORS.md](CONTRIBUTORS.md) fi
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the same [CC0 1.0 Universal License](LICENSE) that covers the project.
+By contributing to this project, you agree that your contributions will be licensed under the same [MIT License](LICENSE) that covers the project.
 
 ## Thank You!
 

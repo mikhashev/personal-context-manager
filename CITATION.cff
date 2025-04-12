@@ -15,7 +15,7 @@ keywords:
   - personal-data
   - defensive-publication
   - open-source-technology
-license: CC0-1.0
+license: MIT License
 repository-code: "https://github.com/mikhashev/personal-context-manager"
 abstract: >-
   This technology solves a fundamental limitation of modern AI systems — 

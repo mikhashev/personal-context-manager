@@ -85,4 +85,4 @@ If you would like to support further development and promotion of the technology
 
 ## License
 
-CC0 1.0 Universal - See [LICENSE](LICENSE) for details.
+Licensed under the MIT License - See [LICENSE](LICENSE) for details.
