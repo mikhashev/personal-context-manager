@@ -77,6 +77,15 @@ Files:
 [Server for Personal Context Technology (PCT) using the Model Context Protocol (MCP)](https://github.com/mikhashev/pct-mcp-server)
 It enables AI assistants like Claude to access and update your personalized context data, creating persistent memory between sessions.
 
+Watch the Personal Context Technology MCP Server in action:
+
+[![PCT MCP Server Demo](https://img.youtube.com/vi/qzCC5EKUkbc/0.jpg)](https://youtu.be/qzCC5EKUkbc?si=4ppw8s3wj2cuanB8)
+
+The demo shows how to:
+- Access personal context data using the MCP tool
+- Update context information using the updateContext tool
+- See how Claude's responses improve with personalized context
+
 ## Ethical Principles
 
 This project is intended exclusively for civilian purposes: improving education, healthcare, increasing productivity, and personalizing AI interaction. Please review the [ethical guidelines](ETHICAL_GUIDELINES.md) before use.
