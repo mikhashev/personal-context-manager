@@ -15,17 +15,17 @@ The personal context file is a structured JSON document that helps AI systems un
 
 ### 1. Personalize Your File
 
-- Open the `personal-context-file.json` in any text editor
-- Replace all placeholders in [brackets] with your specific information
+- Open the `personal_context_self_education_template.json` in any text editor
+- Replace all placeholders in [brackets] with your specific information or ask AI to ask you questions for fill this info. 
 - Fill in your learning goals, preferences, and current knowledge levels
 - Update the cognitive profile section based on your personal experience
-- Save the file
+- Save the file (Ask AI to show you updated full context file in JSON format)
 
 ### 2. Share with AI at the Start of Learning Sessions
 
 ```
 Hello! I'd like to share my personal context file to help you provide more personalized learning support.
-[Paste the entire JSON file here]
+[Paste the entire JSON file here or attach as file]
 Please confirm you've received this context and will use it to guide our learning interaction.
 ```
 
