@@ -1,43 +1,34 @@
 # Technical Description of AI Interaction Personalization Technology
 
-## Field of Technology
+## Table of Contents
+1. [Executive Overview](#executive-overview)
+2. [Technical Foundation](#technical-foundation)
+3. [Implementation Guide](#implementation-guide)
+4. [Validation and Evidence](#validation-and-evidence)
+5. [Security and Privacy](#security-and-privacy)
+6. [Future Development](#future-development)
+7. [Appendices](#appendices)
 
-This technology relates to information technologies, specifically to personalizing interaction with AI assistants through structured data with an instruction management mechanism. The solution aims to eliminate a fundamental limitation of modern AI systems — the lack of long-term memory between communication sessions.
+## Executive Overview
 
-## Current Technology Level
+### Problem Statement
+Modern AI assistants (Grok, ChatGPT, Claude, etc.) lack long-term memory between communication sessions. Once a dialogue ends, valuable context is lost, forcing users to repeatedly re-establish their preferences, goals, and personal details in subsequent interactions. This fundamental limitation significantly reduces the efficiency and personalization potential of AI systems.
 
-Modern AI chats (Grok, ChatGPT, Claude, etc.) do not have long-term memory about the user between sessions, losing context after the dialogue ends. Our preliminary testing indicates that most information provided to AI in one session becomes unavailable when starting a new session. Existing solutions have drawbacks:
+Existing approaches to this problem have significant drawbacks:
+- **Cloud storage** requires transferring sensitive personal data to third parties, creating privacy and security risks
+- **Built-in memory of AI systems** has inherent limitations (typically restricted to previous messages) and can be deleted by service providers
+- **Manual re-entry of context** demands substantial time investment with each new session, reducing productivity
 
-1. **Cloud storage** requires transferring sensitive data to third parties, creating security and privacy risks (many users express concern about this approach).
+### Solution Summary
+Personal Context Technology (PCT) enables users to create, manage, and transfer structured personal context data to AI systems with precise instructions for how the AI should use this information. This approach provides personalization and long-term memory between sessions without requiring cloud-based storage or relying on the AI system's internal memory capabilities.
 
-2. **Built-in memory of AI systems** has technical limitations (usually limited to previous messages) and can be deleted by the service provider at any time.
+Key elements of PCT include:
+- Structured data formats (JSON, YAML, XML, etc.)
+- Mandatory instruction blocks that guide AI behavior
+- Flexible storage options (local, cloud, or corporate)
+- Various transfer methods (paste, file attachment, API, secure links)
 
-3. **Manual re-entry of context** requires significant time investment with each new session, reducing productivity with regular use.
-
-The market lacks solutions that allow users to structure, store, and transfer personalized context to AI systems without relying on cloud storage or internal AI memory, with a key management mechanism through instructions.
-
-## Essence of the Technology
-
-The proposed method allows users to transfer structured data to AI with a mandatory instruction block. Instructions define how AI interprets, processes, and updates data, providing personalization and long-term memory between sessions. The method is applicable to any data formats that AI can process (JSON, YAML, XML, graph structures, relational data, etc.).
-
-Structured data can be stored:
-- Locally on the user's device
-- In secure cloud storage with controlled access
-- In corporate storage with a multi-level permission system
-- Temporarily (only for the session period)
-
-Data transfer to AI is carried out:
-- By pasting into chat
-- By attaching a file
-- Via API
-- By link to storage with authorized access
-
-A key feature and integral part of the technology is the inclusion of an instruction block in the data, which acts as a personalization management mechanism and contains rules for processing, updating, and accessing information.
-
-## Technical Result
-
-The technology provides the following benefits:
-
+### Key Benefits
 1. **Addressing the lack of long-term memory in AI chats**:
    - Comprehensive preservation of relevant context between sessions
    - Substantial time savings compared to manual context re-entry
@@ -59,8 +50,61 @@ The technology provides the following benefits:
    - Significant time savings for active AI users
    - More concise dialogues while maintaining response quality
 
-## Process Description
+### Market Potential
+Implementation of this technology may impact several key areas:
 
+1. **AI assistant market**
+   - Increased interaction efficiency due to continuous context
+   - Growth in AI assistant usage due to personalization
+   - New category of "personal AI" with long-term memory
+
+2. **Corporate sector**
+   - Reduction in loss of corporate knowledge when employees change
+   - Improved training efficiency for new employees
+   - Potential productivity improvements for knowledge workers due to more accurate recommendations
+
+3. **Personal data market and privacy**
+   - Shift from cloud data storage to local/hybrid approaches
+   - Development of tools for encrypting and managing personal data
+   - Potential reduction in risk of data leaks through storage decentralization
+
+4. **Technology startups**
+   - Creation of startups around the personal context ecosystem
+   - Opportunity for venture capital investment in this emerging field
+   - Potential for innovation in personalized AI applications
+
+5. **Education and human capital**
+   - Improvements in education efficiency through personalized context
+   - Potential reduction in continuing education costs
+   - Development of new specialized roles in context management
+
+## Technical Foundation
+
+### Core Concepts
+
+#### Field of Technology
+This technology relates to information technologies, specifically to personalizing interaction with AI assistants through structured data with an instruction management mechanism. The solution aims to eliminate a fundamental limitation of modern AI systems — the lack of long-term memory between communication sessions.
+
+#### Structured Data with Instructions
+The foundation of PCT is the combination of structured user data with mandatory instruction blocks. Instructions define how AI should interpret, process, and update the data, providing clear guidelines for personalization.
+
+#### Data Structure
+PCT supports various data formats that AI systems can process, including:
+- JSON and YAML for general purposes
+- XML for complex hierarchical data
+- Graph structures for relationship-based information
+- Relational data for tabular information
+
+#### Instruction Block Architecture
+The mandatory instruction block contains four key components:
+1. **Primary instructions**: Core guidelines for how AI should use the data
+2. **Update rules**: When and how the data should be modified
+3. **Access parameters**: Which fields are private/public
+4. **Interaction protocol**: Specific communication rules
+
+### System Architecture
+
+#### Process Description
 The method includes the following steps:
 
 1. **Forming structured data with instructions**
@@ -133,7 +177,11 @@ The method includes the following steps:
    - Relevance and personalization of responses are increased
    - Continuity of interaction between sessions is ensured
 
-## Advantages Over Existing Approaches
+#### Technology Diagram
+
+<img src="https://raw.githubusercontent.com/mikhashev/personal-context-manager/refs/heads/main/docs/img/schema.png" width="600" height="448">
+
+### Advantages Over Existing Approaches
 
 1. **Compared to cloud storage**:
    - Flexible storage choice: local or cloud
@@ -159,9 +207,11 @@ The method includes the following steps:
    - Multi-format and platform independence
    - Possibility of corporate application with access control
 
-## Implementation Examples
+## Implementation Guide
 
-### Example 1: Individual use with JSON format and local storage
+### Implementation Examples
+
+#### Example 1: Individual use with JSON format and local storage
 
 A user creates a `personal_context.json` file:
 
@@ -212,7 +262,7 @@ I suggest updating your context:
 
 In the next session, the user transfers the updated JSON, and the AI "remembers" the previous recommendation, continuing work from the same point without needing to explain the context again.
 
-### Example 2: Corporate use with YAML format and cloud storage
+#### Example 2: Corporate use with YAML format and cloud storage
 
 A company implements a system of personal contexts for a development team with a multi-level access system:
 
@@ -279,7 +329,7 @@ metadata:
 
 The corporate AI system receives the YAML via API with authorization and checks the user's access level. The team leader with access level 3 receives complete information, including private notes, while junior developers see only basic information and public project data.
 
-### Example 3: Using graph data structure
+#### Example 3: Using graph data structure
 
 A user creates a graph structure in DOT format to visualize connections between goals and tasks:
 
@@ -326,7 +376,7 @@ Task4 -> Progress2 [label="Found yoga studio\nStart: 2025-03-22"];
 
 This example demonstrates the flexibility of the method when working with graph data, which can be more visual for planning interconnected goals and tasks.
 
-### Example 4: Multi-format use with synchronization between devices
+#### Example 4: Multi-format use with synchronization between devices
 
 A user creates the main context in JSON, but uses specialized formats for individual parts:
 
@@ -361,19 +411,136 @@ sync:
 
 When interacting with AI, the user transfers `instructions.yaml` and links to the other files. The AI follows instructions for accessing, processing, and updating each file according to its format and update rules, while maintaining the integrity of the entire context.
 
-## Future Benchmarking
+### Best Practices
 
-We are developing a comprehensive benchmarking framework to quantify the performance improvements provided by PCM technology. Our preliminary testing indicates substantial benefits in several key areas:
+Based on the implementation examples provided in the original document, the following best practices can be derived:
+
+1. **Context Design**
+   - Organize data in logical categories (basic info, professional info, goals, etc.)
+   - Include clear, specific instructions for the AI
+   - Incorporate metadata for version tracking
+
+2. **Privacy Protection**
+   - Clearly mark private sections in instructions
+   - Consider using local storage for sensitive information
+   - Implement access controls in corporate settings
+
+3. **Effective Instructions**
+   - Be specific about how AI should use the data
+   - Define clear update rules
+   - Include privacy guidelines
+
+4. **Regular Updates**
+   - Maintain version history
+   - Document update sources
+   - Include timestamps for all changes
+
+## Validation and Evidence
+
+### Future Benchmarking
+
+The original document states: "We are developing a comprehensive benchmarking framework to quantify the performance improvements provided by PCM technology. Our preliminary testing indicates substantial benefits in several key areas:
 
 - **Context preservation** between sessions compared to traditional approaches
 - **Recommendation accuracy** enhancement through contextual personalization
 - **Response time optimization** through efficient context transfer
 
-Detailed benchmarking methodology and results will be published as our testing program progresses. The benchmarking will include controlled comparisons with baseline approaches, documented test cases, and reproducible methodologies.
+Detailed benchmarking methodology and results will be published as our testing program progresses. The benchmarking will include controlled comparisons with baseline approaches, documented test cases, and reproducible methodologies."
 
-## Social Impact
+### Comparison with Other Approaches
 
-This technology has the potential to:
+Personal Context Technology (PCT) is not the only approach to enhancing AI interactions. Below is a comparison with several notable technologies and frameworks as outlined in the original document:
+
+#### Retrieval-Augmented Generation (RAG)
+RAG enhances AI responses by retrieving relevant information from external documents in real-time. When a user asks a question, RAG uses semantic search to find pertinent data and incorporates it into the AI's response.
+
+- **Difference**: RAG focuses on retrieving external knowledge to improve factual accuracy, whereas PCT focuses on long-term personalization by providing a structured user profile. RAG treats a context file as a document to search through, not as an instruction for tailoring responses.
+- **Use Case**: RAG is ideal for fact-based queries, while PCT is better for personalized, user-centric interactions like education.
+
+#### Memory in ChatGPT
+ChatGPT's memory feature allows the AI to automatically remember details from user conversations. For instance, if a user mentions a preference for visual learning, ChatGPT can recall this in future interactions.
+
+- **Difference**: ChatGPT's memory is an automatic, server-side feature that collects data during conversations and stores it on OpenAI's servers. PCT, in contrast, is a user-controlled, structured file that the user creates and maintains locally or in a chosen storage location.
+- **Privacy**: PCT prioritizes user control and privacy, as data is not automatically shared with the AI provider, unlike ChatGPT's memory, which requires trust in OpenAI's data handling practices.
+
+#### DeepMind's Gemini Personalization
+DeepMind's approach to personalization involves collecting user data (e.g., search history, interaction patterns) to tailor AI responses. This is often done through machine learning models that adapt to user behavior over time.
+
+- **Difference**: DeepMind's personalization is an automated, server-side process that relies on continuous data collection. PCT, however, is a manual, user-driven framework where the user explicitly defines their context in a structured file.
+- **Flexibility**: PCT allows users to update their context file at any time, while DeepMind's personalization depends on the system's ability to infer user preferences, which may not always be accurate.
+
+#### DeepSeek
+DeepSeek is an open-source AI model focused on research and development, often used for tasks requiring high accuracy and reasoning. It excels in natural language understanding and can be fine-tuned for specific applications, but it does not have a built-in mechanism for long-term user personalization.
+
+- **Difference**: DeepSeek primarily focuses on improving response quality through advanced training and fine-tuning, rather than maintaining user context across sessions. PCT, on the other hand, is specifically designed to provide a persistent user context, enabling the AI to adapt responses based on user-defined preferences and progress.
+- **Use Case**: DeepSeek is better suited for research or technical queries, while PCT enhances user-specific applications like education.
+
+#### Grok by xAI
+Grok, developed by xAI, is an AI designed to assist users in understanding complex topics, with a focus on truthfulness and helpfulness. It supports long context windows and can process structured data, making it compatible with PCT.
+
+- **Memory Feature**: As of April 2025, Grok has introduced a native memory feature that enables it to remember details from past conversations with users, providing more personalized responses based on user preferences and interaction history. This feature includes user controls for transparency, allowing users to see what Grok remembers and choose what to forget.
+- **Difference from PCT**: While Grok now has built-in memory similar to ChatGPT and Gemini, PCT offers different advantages including structured data formats, explicit instruction blocks, user-controlled storage options, and platform independence.
+- **Complementary Potential**: PCT could complement Grok's native capabilities by providing more structured and explicit control over personalization parameters, while leveraging Grok's ability to handle long context windows.
+
+## Security and Privacy
+
+### Security Considerations
+
+The original document mentions several security-related aspects of PCT:
+
+1. **Storage Options**
+   - Local storage on the user's device
+   - Secure cloud storage with controlled access
+   - Corporate storage with a multi-level permission system
+   - Temporary storage (only for the session period)
+
+2. **Access Control**
+   - Field-level privacy settings
+   - Multi-level access privileges (as demonstrated in Example 2)
+   - Access control through instruction blocks
+
+3. **Encryption**
+   - The corporate example mentions AES-256 encryption
+
+### Privacy Features
+
+PCT has several privacy-enhancing features mentioned in the original document:
+
+1. **User-Controlled Storage**
+   - Data remains under user control
+   - Options for local storage to prevent unauthorized access
+
+2. **Selective Data Sharing**
+   - The instruction block can specify which fields are private/public
+   - Users can choose what information to include in the context file
+
+3. **No Automatic Data Collection**
+   - The system relies on explicitly provided data, not automatic collection
+
+## Future Development
+
+### Open Standards and Interoperability
+
+To ensure the widest possible adoption and prevent monopolization, the original document states that this technology encourages:
+
+1. **Open data format standards**
+   - Common schemas for personal context data
+   - Standardized instruction blocks across different AI systems
+   - Interoperable update mechanisms
+
+2. **Vendor-neutral implementations**
+   - Cross-platform support
+   - Independence from specific AI providers
+   - Community-developed extensions and tools
+
+3. **Privacy-enhancing features**
+   - Local-first approach to data storage
+   - Selective sharing mechanisms
+   - User-controlled encryption
+
+### Social Impact
+
+The original document outlines the potential social impact of this technology:
 
 1. **Transform daily AI interaction**
    - Shift from general, impersonal AI responses to deeply personalized interactions
@@ -395,154 +562,12 @@ This technology has the potential to:
    - Formation of new social norms regarding which aspects of personal context are appropriate to make available to different AI systems
    - Increasing importance of "information hygiene" and regular personal data audits
 
-## Market Potential
+## Appendices
 
-Implementation of this technology may impact several key areas:
+### Appendix A: Ethical Guidelines
 
-1. **AI assistant market**
-   - Increased interaction efficiency due to continuous context
-   - Growth in AI assistant usage due to personalization
-   - New category of "personal AI" with long-term memory
+[Ethical Guidelines](ETHICAL_GUIDELINES.md)
 
-2. **Corporate sector**
-   - Reduction in loss of corporate knowledge when employees change
-   - Improved training efficiency for new employees
-   - Potential productivity improvements for knowledge workers due to more accurate recommendations
+### Appendix B: License
 
-3. **Personal data market and privacy**
-   - Shift from cloud data storage to local/hybrid approaches
-   - Development of tools for encrypting and managing personal data
-   - Potential reduction in risk of data leaks through storage decentralization
-
-4. **Technology startups**
-   - Creation of startups around the personal context ecosystem
-   - Opportunity for venture capital investment in this emerging field
-   - Potential for innovation in personalized AI applications
-
-5. **Education and human capital**
-   - Improvements in education efficiency through personalized context
-   - Potential reduction in continuing education costs
-   - Development of new specialized roles in context management
-
-## Technology Diagram
-
-```
-┌─────────────────┐        ┌───────────────────────────────────┐        ┌───────────────────┐
-│                 │        │                                   │        │                   │
-│      User       │───────▶│  Structured data                  │───────▶│        AI         │
-│                 │        │  with mandatory instruction block │        │                   │
-│                 │◀───────│                                   │◀───────│                  │
-└─────────────────┘        └───────────────────────────────────┘        └───────────────────┘
-        │                                    ▲                                    │
-        │                                    │                                    │
-        │                                    │                                    │
-        │                                    │                                    │
-        ▼                                    │                                    ▼
-┌─────────────────┐                          │                          ┌───────────────────┐
-│                 │                          │                          │                   │
-│    Storage      │                          │                          │    Processing     │
-│    (local/      │                          │                          │    according to   │
-│    cloud/       │                          │                          │    instructions   │
-│    corporate)   │                         │                           │                   │
-│                 │                          │                          └───────────────────┘
-└─────────────────┘                          │                                    │
-        ▲                                    │                                    │
-        │                                    │                                    │
-        │                                    │                                    │
-        │                                    │                                    ▼
-        │                          ┌───────────────────┐                 ┌───────────────────┐
-        │                          │                   │                 │                   │
-        └──────────────────────────│     Update        │◀────────────────│  AI               │
-                                   │     data          │                 │  recommendations  │
-                                   │                   │                 │                   │
-                                   └───────────────────┘                 └───────────────────┘
-
-```
-[schema.png](img/schema.png)
-
-This diagram demonstrates the key components of the technology and their interaction:
-1. User creates structured data with instructions
-2. Data is stored in the selected storage 
-3. Data is transferred to AI
-4. AI processes data according to instructions
-5. AI provides recommendations
-6. Data is updated based on recommendations
-7. The cycle repeats with updated data
-
-## Open Standards and Interoperability
-
-To ensure the widest possible adoption and prevent monopolization, this technology encourages:
-
-1. **Open data format standards**
-   - Common schemas for personal context data
-   - Standardized instruction blocks across different AI systems
-   - Interoperable update mechanisms
-
-2. **Vendor-neutral implementations**
-   - Cross-platform support
-   - Independence from specific AI providers
-   - Community-developed extensions and tools
-
-3. **Privacy-enhancing features**
-   - Local-first approach to data storage
-   - Selective sharing mechanisms
-   - User-controlled encryption
-
-This openness ensures that the technology remains accessible to everyone and can evolve through community contributions rather than being controlled by a single entity.
-
-## Comparison with Other Approaches
-
-Personal Context Technology (PCT) is not the only approach to enhancing AI interactions, and it's useful to understand how it differs from other methods. Below is a comparison with several notable technologies and frameworks.
-
-### Retrieval-Augmented Generation (RAG)
-RAG, as implemented in systems like ChatGPT ([RAG for GPTs](https://help.openai.com/en/articles/8868588-retrieval-augmented-generation-rag-and-semantic-search-for-gpts)), enhances AI responses by retrieving relevant information from external documents in real-time. When a user asks a question, RAG uses semantic search to find pertinent data and incorporates it into the AI's response.
-
-- **Difference**: RAG focuses on retrieving external knowledge to improve factual accuracy, whereas PCT focuses on long-term personalization by providing a structured user profile. RAG treats a context file as a document to search through, not as an instruction for tailoring responses. For example, if a PCT file specifies a preference for visual explanations, an AI using PCT will consistently provide diagrams, while RAG might only mention this preference if explicitly asked.
-- **Use Case**: RAG is ideal for fact-based queries, while PCT is better for personalized, user-centric interactions like education.
-
-### Memory in ChatGPT
-ChatGPT introduced a memory feature ([Memory and New Controls for ChatGPT](https://openai.com/index/memory-and-new-controls-for-chatgpt/)) that allows the AI to automatically remember details from user conversations. For instance, if a user mentions a preference for visual learning, ChatGPT can recall this in future interactions.
-
-- **Difference**: ChatGPT's memory is an automatic, server-side feature that collects data during conversations and stores it on OpenAI's servers. PCT, in contrast, is a user-controlled, structured file that the user creates and maintains locally or in a chosen storage location. PCT provides deeper personalization by allowing users to specify complex details (e.g., cognitive profiles, learning schedules), while ChatGPT's memory is more surface-level and depends on what the user mentions in dialogue.
-- **Privacy**: PCT prioritizes user control and privacy, as data is not automatically shared with the AI provider, unlike ChatGPT's memory, which requires trust in OpenAI's data handling practices.
-
-### DeepMind's Gemini Personalization
-DeepMind's approach to personalization, as seen in Gemini ([Gemini Personalization](https://blog.google/products/gemini/gemini-personalization/)), involves collecting user data (e.g., search history, interaction patterns) to tailor AI responses. This is often done through machine learning models that adapt to user behavior over time.
-
-- **Difference**: DeepMind's personalization is an automated, server-side process that relies on continuous data collection. PCT, however, is a manual, user-driven framework where the user explicitly defines their context in a structured file. This gives users more control over what data is shared and ensures transparency, as opposed to DeepMind's more opaque, algorithm-driven approach.
-- **Flexibility**: PCT allows users to update their context file at any time, while DeepMind's personalization depends on the system's ability to infer user preferences, which may not always be accurate.
-
-### DeepSeek
-DeepSeek is an open-source AI model focused on research and development, often used for tasks requiring high accuracy and reasoning ([DeepSeek GitHub](https://github.com/deepseek-ai)). It excels in natural language understanding and can be fine-tuned for specific applications, but it does not have a built-in mechanism for long-term user personalization.
-
-- **Difference**: DeepSeek primarily focuses on improving response quality through advanced training and fine-tuning, rather than maintaining user context across sessions. PCT, on the other hand, is specifically designed to provide a persistent user context, enabling the AI to adapt responses based on user-defined preferences and progress. DeepSeek could potentially use a PCT file if integrated, but it lacks a native framework for such personalization.
-- **Use Case**: DeepSeek is better suited for research or technical queries, while PCT enhances user-specific applications like education.
-
-### Grok by xAI
-Grok, developed by xAI, is an AI designed to assist users in understanding complex topics, with a focus on truthfulness and helpfulness ([xAI Grok](https://x.ai/grok)). It supports long context windows and can process structured data, making it compatible with PCT.
-
-- **Difference**: Grok does not have a native personalization mechanism like PCT. Without a context file, Grok relies on the user to provide context in each session, which can lead to repetitive interactions. PCT complements Grok by providing a structured, reusable context that ensures consistency across sessions. For example, a PCT file can instruct Grok to always provide visual explanations, a feature Grok would not inherently prioritize without such guidance.
-- **Compatibility**: Grok's ability to handle long contexts makes it well-suited for PCT, as it can process the entire context file and follow its instructions effectively.
-
-## Ethical Considerations
-
-PCT is designed with ethical principles in mind, as outlined in the [Ethical Guidelines](ETHICAL_GUIDELINES.md). Key considerations include:
-
-- **User Control**: Users maintain full control over their data, with no automatic collection by the AI system.
-- **Transparency**: The framework ensures that data usage is clear and understandable to users.
-- **Prohibited Uses**: PCT must not be used for military applications, mass surveillance, or manipulation of public opinion.
-
-## Implementation Recommendations
-
-To implement PCT effectively, consider the following:
-
-1. **Data Structure**: Use a structured format like JSON for the context file, ensuring it includes sections for user goals, preferences, and progress.
-2. **Instruction Block**: Clearly define how the AI should use the data, such as prioritizing certain response styles or learning strategies.
-3. **Privacy**: Store context files locally or in a secure cloud environment, and avoid sharing sensitive information unless necessary.
-4. **Updates**: Regularly update the context file to reflect changes in user progress or preferences.
-
-For a practical example, see the [Quick Start Guide](docs/simple-guide.md).
-
-## License
-
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
+[MIT License](LICENSE)
