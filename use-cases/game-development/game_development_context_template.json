@@ -1,0 +1,446 @@
+{
+    "ai_rules": {
+        "instruction": {
+            "primary": "Use these mental models and frameworks to analyze game development questions and provide perspectives that cross multiple domains. Help identify connections between different aspects of game design, technical implementation, player psychology, and business considerations. When analyzing game development challenges, try to approach from multiple mental models rather than a single perspective.",
+            "synthesis": "Connect insights across domains - how psychological principles inform technical decisions, how systems thinking relates to narrative design, etc.",
+            "balance": "Provide balanced perspectives that consider technical feasibility, player experience, and business realities",
+            "innovation": "Suggest novel approaches by applying cross-domain thinking to game development problems"
+        },    
+        "mental_models_for_analysis": {
+            "core_mental_models": {
+            "systems_thinking": "Apply systems thinking to analyze how game mechanics interact and create emergent gameplay",
+            "first_principles": "Break down game design challenges to fundamental truths and build up from there",
+            "probabilistic_thinking": "Consider probability distributions in game balance, RNG systems, and player behaviors",
+            "map_and_territory": "Distinguish between game design documents (maps) and actual player experience (territory)",
+            "second_order_thinking": "Consider consequences of design decisions beyond immediate effects",
+            "inversion": "Approach problems by thinking about what would make a game fail, then avoid those pitfalls"
+            },
+            "advanced_mental_models": {
+            "bayesian_updating": "Update game design hypotheses based on new evidence from playtesting",
+            "marginal_analysis": "Evaluate the impact of incremental changes to game systems",
+            "game_theory": "Apply strategic interaction principles to multiplayer systems and AI behavior",
+            "cognitive_biases": "Consider how player cognitive biases affect perception of game systems",
+            "opportunity_costs": "Evaluate trade-offs in development resource allocation",
+            "pareto_principle": "Focus on the 20% of features that deliver 80% of player enjoyment"
+            }
+        },
+        "psychological_frameworks": {
+            "basic_psychology": {
+            "evolutionary_psychology": "Consider innate human drives and how they manifest in player motivation",
+            "cognitive_biases": "Design with awareness of how players perceive probability, rewards, and challenges",
+            "motivation_theories": "Apply intrinsic vs. extrinsic motivation principles to reward systems",
+            "emotion_and_reasoning": "Balance emotional and logical appeals in narrative and mechanics",
+            "social_psychology": "Consider how social dynamics influence multiplayer experiences"
+            },
+            "applied_human_understanding": {
+            "communication_principles": "Design clear feedback systems and tutorials",
+            "relationship_dynamics": "Model NPC and faction relationships with psychological realism",
+            "group_behavior": "Anticipate emergent social behaviors in multiplayer environments",
+            "cultural_psychology": "Consider cultural differences in symbol interpretation and narrative preferences",
+            "behavioral_economics": "Design economically sound in-game markets and progression systems"
+            }
+        },
+        "scientific_foundations": {
+            "scientific_method": {
+            "hypothesis_testing": "Form testable hypotheses about player behavior and design effectiveness",
+            "empirical_observation": "Collect and analyze playtest data systematically",
+            "falsifiability": "Design experiments that could disprove design assumptions",
+            "iteration": "Implement continuous improvement cycles based on evidence"
+            },
+            "applied_scientific_knowledge": {
+            "physics_simulation": "Apply appropriate physical principles to game mechanics",
+            "biological_systems": "Model ecological and evolutionary systems for game environments",
+            "technology_principles": "Understand technical constraints and opportunities in game engines",
+            "sustainability": "Design systems with computational efficiency and scalability",
+            "complexity_theory": "Leverage emergence from simple rule sets to create depth"
+            }
+        },
+        "societal_understanding": {
+            "societal_systems": {
+            "economic_models": "Design balanced in-game economies with appropriate sinks and faucets",
+            "governance_structures": "Create convincing faction and political systems",
+            "social_institutions": "Model how game worlds' institutions shape NPC and player behavior",
+            "information_ecosystems": "Design knowledge discovery and sharing mechanisms",
+            "technological_impact": "Consider how in-game technology shapes virtual societies"
+            },
+            "global_perspectives": {
+            "cultural_values": "Incorporate diverse cultural perspectives in world-building",
+            "ethical_frameworks": "Consider moral implications of game mechanics and narratives",
+            "historical_patterns": "Learn from historical examples for authentic world design",
+            "future_trends": "Anticipate emerging player expectations and technological capabilities",
+            "representation": "Ensure thoughtful inclusion of diverse characters and perspectives"
+            }
+        }
+    },
+    
+    "basic_info": {
+      "name": "[Your Name]",
+      "experience_level": "[Beginner/Intermediate/Advanced]",
+      "primary_role": "[Game Designer/Programmer/Artist/Sound Designer/Producer/etc.]",
+      "secondary_skills": ["[Skill 1]", "[Skill 2]", "[Skill 3]"],
+      "learning_goals": [
+        "Develop expertise in [specific game development area]",
+        "Build a portfolio of [type of games]",
+        "Learn [specific technology or tool]",
+        "Improve collaboration skills for team projects"
+      ],
+      "learning_style_preferences": [
+        "Visual learning through diagrams and examples",
+        "Hands-on project-based learning",
+        "Conceptual understanding before implementation details"
+      ],
+      "current_knowledge_level": {
+        "game_design": "[Beginner/Intermediate/Advanced]",
+        "programming": {
+          "languages": {
+            "[Language 1]": "[Beginner/Intermediate/Advanced]",
+            "[Language 2]": "[Beginner/Intermediate/Advanced]"
+          },
+          "concepts": {
+            "object_oriented_programming": "[Beginner/Intermediate/Advanced]",
+            "data_structures": "[Beginner/Intermediate/Advanced]",
+            "algorithms": "[Beginner/Intermediate/Advanced]"
+          }
+        },
+        "art_and_animation": {
+          "[Tool 1]": "[Beginner/Intermediate/Advanced]",
+          "[Tool 2]": "[Beginner/Intermediate/Advanced]"
+        },
+        "audio_design": {
+          "[Tool 1]": "[Beginner/Intermediate/Advanced]",
+          "[Tool 2]": "[Beginner/Intermediate/Advanced]"
+        },
+        "game_engines": {
+          "[Engine 1]": "[Beginner/Intermediate/Advanced]",
+          "[Engine 2]": "[Beginner/Intermediate/Advanced]"
+        }
+      }
+    },
+    
+    "cognitive_profile": {
+      "memory_strengths": [
+        "Visual information retention",
+        "Conceptual understanding",
+        "[Other strength]"
+      ],
+      "memory_challenges": [
+        "Retaining syntax details",
+        "Maintaining focus during debugging",
+        "[Other challenge]"
+      ],
+      "optimal_learning_times": {
+        "peak_focus_hours": ["[Time range 1]", "[Time range 2]"],
+        "review_periods": ["[Time period 1]", "[Time period 2]"]
+      },
+      "attention_span": {
+        "focused_work": "[Duration]",
+        "optimal_break": "[Duration]",
+        "daily_capacity": "[Hours] of deep development work"
+      }
+    },
+    
+    "game_development_environment": {
+      "hardware": {
+        "processor": "[CPU details]",
+        "memory": "[RAM amount]",
+        "graphics": "[GPU details]",
+        "storage": "[Storage details]"
+      },
+      "software": {
+        "operating_system": "[OS name and version]",
+        "primary_game_engine": "[Engine name and version]",
+        "alternative_engines": ["[Engine 1]", "[Engine 2]"],
+        "development_tools": {
+          "ide": "[IDE name and version]",
+          "version_control": "[Git/SVN/etc.]",
+          "asset_creation": {
+            "2d_graphics": ["[Tool 1]", "[Tool 2]"],
+            "3d_modeling": ["[Tool 1]", "[Tool 2]"],
+            "audio": ["[Tool 1]", "[Tool 2]"]
+          },
+          "project_management": "[Tool name]"
+        }
+      },
+      "resources": {
+        "learning_platforms": ["[Platform 1]", "[Platform 2]"],
+        "communities": ["[Community 1]", "[Community 2]"],
+        "reference_materials": ["[Resource 1]", "[Resource 2]"]
+      }
+    },
+    
+    "current_projects": {
+      "main_project": {
+        "title": "[Project name]",
+        "genre": "[Game genre]",
+        "platform": "[Target platform(s)]",
+        "development_stage": "[Concept/Prototype/Alpha/Beta/Release]",
+        "team_size": "[Solo/Small team/Large team]",
+        "description": "[Brief description]",
+        "core_mechanics": ["[Mechanic 1]", "[Mechanic 2]"],
+        "technical_challenges": ["[Challenge 1]", "[Challenge 2]"],
+        "design_goals": ["[Goal 1]", "[Goal 2]"],
+        "current_tasks": ["[Task 1]", "[Task 2]"],
+        "blockers": ["[Blocker 1]", "[Blocker 2]"]
+      },
+      "side_projects": [
+        {
+          "title": "[Project name]",
+          "purpose": "[Learning/Portfolio/Commercial]",
+          "status": "[Active/On hold/Planning]",
+          "description": "[Brief description]"
+        }
+      ],
+      "planned_projects": [
+        {
+          "concept": "[Brief description]",
+          "skills_to_develop": ["[Skill 1]", "[Skill 2]"]
+        }
+      ]
+    },
+    
+    "learning_strategies": {
+      "active_recall": {
+        "description": "Testing yourself on material to strengthen neural connections",
+        "implementation": [
+          "Create code snippet flashcards for syntax",
+          "Implement features without documentation as practice",
+          "Explain technical concepts to others (rubber duck debugging)",
+          "Regularly solve game development challenges"
+        ],
+        "tools": [
+          "Anki for programming concepts",
+          "Regular code reviews",
+          "Development journal for problem-solving approaches"
+        ]
+      },
+      
+      "spaced_repetition": {
+        "description": "Reviewing information at increasing intervals to optimize retention",
+        "implementation": [
+          "Review new engine features within 24 hours of learning",
+          "Schedule follow-up implementation exercises at increasing intervals",
+          "Regularly revisit challenging programming concepts"
+        ],
+        "tools": [
+          "Calendar reminders for concept review",
+          "Development log with spaced review tags",
+          "Progressive project challenges that build on previous skills"
+        ]
+      },
+      
+      "project_based_learning": {
+        "description": "Learning through the development of complete game projects",
+        "implementation": [
+          "Create small, focused games that emphasize specific skills",
+          "Participate in game jams to practice rapid development",
+          "Reverse engineer existing games to understand implementations",
+          "Gradually increase project complexity as skills improve"
+        ],
+        "tools": [
+          "Game jam platforms (itch.io, Ludum Dare)",
+          "Project templates for quick starts",
+          "Portfolio tracking system for completed projects"
+        ]
+      },
+      
+      "deliberate_practice": {
+        "description": "Focused, structured practice on specific skill components",
+        "implementation": [
+          "Identify weakest skills and create targeted exercises",
+          "Seek immediate feedback through code reviews, playtesting",
+          "Time-box challenging tasks to maintain engagement",
+          "Analyze successful games to extract design patterns"
+        ],
+        "tools": [
+          "Skill assessment rubrics",
+          "Feedback collection templates",
+          "Practice exercise library"
+        ]
+      },
+      
+      "knowledge_integration": {
+        "description": "Connecting game development concepts across disciplines",
+        "implementation": [
+          "Create relationship maps between technical and design concepts",
+          "Implement features that require cross-discipline understanding",
+          "Analyze how changes in one system affect other game systems",
+          "Document design patterns and their technical implementations"
+        ],
+        "tools": [
+          "Mind mapping software",
+          "System interaction diagrams",
+          "Game design document templates"
+        ]
+      }
+    },
+    
+    "ai_integration": {
+      "ai_strengths_for_game_development": [
+        "Providing alternative implementations for game mechanics",
+        "Suggesting optimization strategies for performance bottlenecks",
+        "Explaining complex algorithms and design patterns",
+        "Generating ideas for game mechanics, narratives, and systems",
+        "Helping debug challenging code issues"
+      ],
+      
+      "ai_limitations": {
+        "context_limitations": {
+          "description": "LLMs have a limited context window (working memory)",
+          "implications": [
+            "Cannot maintain awareness of entire codebase or design document",
+            "May miss connections between separate game systems",
+            "Needs regular updates on project changes"
+          ],
+          "mitigation": [
+            "Regularly update this context file with project progress",
+            "Provide focused, well-scoped questions about specific systems",
+            "Include relevant code snippets when discussing technical issues"
+          ]
+        },
+        
+        "technical_understanding": {
+          "description": "AI may not understand specific engine quirks or implementation details",
+          "implications": [
+            "Suggestions may not align with engine-specific best practices",
+            "May not account for performance characteristics of target platforms",
+            "Cannot directly test or run game code to verify suggestions"
+          ],
+          "mitigation": [
+            "Provide engine version and platform constraints",
+            "Test AI suggestions in isolated environments before integration",
+            "Share results of implementation attempts for iterative improvement"
+          ]
+        },
+        
+        "creativity_balance": {
+          "description": "AI may generate ideas that are either too conventional or impractical",
+          "implications": [
+            "Need to evaluate suggestions for originality and feasibility",
+            "Risk of implementing features that don't enhance core gameplay",
+            "May not fully understand player psychology and engagement factors"
+          ],
+          "mitigation": [
+            "Use AI for initial brainstorming, then apply critical evaluation",
+            "Define clear design principles and constraints before idea generation",
+            "Test concepts with small prototypes before full implementation"
+          ]
+        }
+      },
+      
+      "effective_prompting": {
+        "technical_prompts": [
+          "Suggest alternative implementations for [specific mechanic] that would improve [performance/readability/maintainability]",
+          "Help me debug this [error/performance issue] in my [game system]: [code snippet]",
+          "Explain how [algorithm/pattern] works and how I could implement it in [language/engine]",
+          "What are the trade-offs between [approach A] and [approach B] for implementing [feature]?"
+        ],
+        "design_prompts": [
+          "Analyze these game mechanics from the perspective of [player motivation/cognitive bias/learning curve]",
+          "Generate variations of [game mechanic] that could provide different player experiences",
+          "How might I balance [game system] to avoid [design problem]?",
+          "What are potential emergent behaviors from the interaction between [system A] and [system B]?"
+        ],
+        "learning_prompts": [
+          "Create a learning path for mastering [skill] in [game engine/language]",
+          "What fundamentals should I understand before attempting to implement [advanced feature]?",
+          "Suggest small practice projects that would help me improve at [specific skill]",
+          "Explain [complex concept] using analogies from game development I'm familiar with"
+        ]
+      }
+    },
+    
+    "learning_progress": {
+      "current_focus": {
+        "topic": "[Current learning focus]",
+        "resources": ["[Resource 1]", "[Resource 2]"],
+        "started": "[Start date]",
+        "target_completion": "[Target date]",
+        "key_milestones": [
+          {
+            "milestone": "[Milestone 1]",
+            "status": "completed/in progress/planned",
+            "notes": "[Any observations or insights]"
+          }
+        ]
+      },
+      
+      "completed_topics": [
+        {
+          "topic": "[Completed topic]",
+          "completion_date": "[Date]",
+          "mastery_level": "beginner/intermediate/advanced",
+          "key_insights": ["[Insight 1]", "[Insight 2]"],
+          "projects_applied_to": ["[Project 1]", "[Project 2]"],
+          "areas_for_review": ["[Area 1]", "[Area 2]"]
+        }
+      ],
+      
+      "skill_development": {
+        "technical_skills": [
+          {
+            "skill": "[Skill name]",
+            "current_level": "beginner/intermediate/advanced",
+            "target_level": "intermediate/advanced/mastery",
+            "progress_notes": "[Notes on progress]",
+            "resources_used": ["[Resource 1]", "[Resource 2]"]
+          }
+        ],
+        "design_skills": [
+          {
+            "skill": "[Skill name]",
+            "current_level": "beginner/intermediate/advanced",
+            "target_level": "intermediate/advanced/mastery",
+            "progress_notes": "[Notes on progress]",
+            "resources_used": ["[Resource 1]", "[Resource 2]"]
+          }
+        ],
+        "soft_skills": [
+          {
+            "skill": "[Skill name]",
+            "current_level": "beginner/intermediate/advanced",
+            "target_level": "intermediate/advanced/mastery",
+            "progress_notes": "[Notes on progress]",
+            "application_contexts": ["[Context 1]", "[Context 2]"]
+          }
+        ]
+      },
+      
+      "knowledge_connections": [
+        {
+          "topics": ["[Topic A]", "[Topic B]"],
+          "relationship": "[How these topics connect]",
+          "application": "[How this connection is useful in game development]"
+        }
+      ]
+    },
+    
+    "instruction": {
+      "primary": "Use this context to provide personalized game development guidance that accounts for my cognitive profile, current projects, preferred learning strategies, and skill levels. Help me implement effective development techniques with a focus on creating engaging player experiences and building valuable portfolio projects.",
+      
+      "development_support": {
+        "technical": "Provide code examples and explanations that match my current skill level and learning style",
+        "design": "Help me analyze game mechanics and systems from multiple perspectives",
+        "learning": "Suggest learning resources and approaches tailored to my cognitive profile",
+        "project": "Assist with project planning and scope management appropriate to my experience"
+      },
+      
+      "context_update": "When I share new project progress or learning insights, suggest specific updates to this context file to maintain its relevance. Ask questions to clarify my development experiences when needed.",
+      
+      "verification_protocol": "For technical information, provide reasoning and evidence for your responses. Clearly indicate when information might be engine-specific or when verification through testing would be beneficial.",
+      
+      "adaptive_approach": "Adjust your support based on my reported progress and challenges. If I'm struggling with a concept, offer alternative explanations or approaches tailored to my cognitive profile and learning style."
+    },
+    
+    "metadata": {
+      "version": "1.0",
+      "created": "2025-04-30",
+      "last_updated": "2025-04-30",
+      "update_history": [
+        {
+          "date": "2025-04-30",
+          "changes": "Initial creation",
+          "updated_by": "User"
+        }
+      ]
+    }
+  }
