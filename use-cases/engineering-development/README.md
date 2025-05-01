@@ -1,50 +1,53 @@
-# How to Use Your Engineering Development Context File
+# How to Use Your Adaptive Engineering Context File
 
-This README provides step-by-step instructions for using your personal context file to enhance AI interactions for engineering tasks and development work.
+This README provides step-by-step instructions for using your adaptive engineering context file to enhance AI interactions across various engineering disciplines.
 
-## What is the Engineering Development Context File?
+## What is the Adaptive Engineering Context File?
 
-The engineering development context file is a structured JSON document that helps AI systems understand:
+The adaptive engineering context file is a structured JSON document that:
 
-- Your engineering background, skills, and experience
-- Your current projects and technical challenges
-- Your cognitive strengths and preferred learning strategies
-- Your development environment and technical constraints
-- How to analyze problems using multiple mental models and frameworks
+- Automatically adapts to your specific engineering discipline
+- Helps AI systems understand your background, skills, and experience
+- Provides information about your current projects and technical challenges
+- Maps your cognitive strengths and preferred learning strategies
+- Documents your development environment and technical constraints
+- Includes mental models and frameworks for analyzing engineering problems
 
-The file is designed to make AI interactions more personalized, relevant, and effective for engineering work across multiple disciplines.
+The file is designed to make AI interactions more personalized, relevant, and effective for engineering work across multiple disciplines including software, mechanical, electrical, civil, aerospace, chemical, biomedical, environmental, industrial, and systems engineering.
 
 ## Quick Start Guide
 
 ### 1. Personalize Your Context File
 
-- Open the [engineering_development_context_template.json](engineering_development_context_template.json) file in any text editor
-- Replace all placeholders in [brackets] with your specific information or ask AI to do it in dialogue later
-- Pay special attention to:
-  - Your engineering experience and primary role
-  - Current projects and technical environment
-  - Learning style and cognitive preferences
-  - Engineering approach and skill inventory
+- Open the [adaptive_engineering_context_template.json](adaptive_engineering_context_template.json) file in any text editor
+- Replace all placeholders in [brackets] with your specific information
+- At minimum, fill out:
+  - Your name and engineering discipline
+  - Experience level and primary role
+  - Current project information
+  - Key tools and technologies you use
+- For the richest experience, complete as many sections as possible
 
-### 2. Share with AI at the Start of Development Sessions
+### 2. Share with AI at the Start of Sessions
 
 ```
-Hello! I'd like to share my personal context file to help you provide more personalized engineering support.
+Hello! I'd like to share my adaptive engineering context file to help you provide more personalized support for my engineering work.
 
-[Paste the entire JSON file here] or attach as file
+[Paste the entire JSON file here or attach as file]
 
-Please confirm you've received this context and will use it to guide our engineering session.
+Please confirm you've received this context and will use it to guide our session.
 ```
 
-### 3. Use Transparency Features to Understand AI Reasoning
+### 3. Let AI Detect Your Engineering Discipline
 
-The context file includes transparency features that can help you understand how the AI is using your context:
+The context file includes a comprehensive database of terminology, tools, and challenges for 10 different engineering disciplines. The AI will:
 
-- **Standard Transparency** (default): The AI will tell you which parts of your context it plans to use before answering
-- **Full Transparency**: Adds verification of which context elements were actually used
-- **Minimal Transparency**: Only uses inline citations when referencing your context
+- Automatically detect your discipline from your questions and context file
+- Adapt its responses to use appropriate terminology and concepts
+- Focus on challenges relevant to your specific field
+- Track the detected discipline in the metadata section
 
-To change the transparency level, update the `activation_levels.current_setting` value in your context file.
+If you work across multiple disciplines, the AI will adjust based on the specific questions you ask.
 
 ### 4. Ask Engineering Questions That Leverage Your Context
 
@@ -53,25 +56,41 @@ After sharing the context, you can ask questions like:
 - "Given my current project constraints, how should I implement [specific feature]?"
 - "Based on my experience level with [technology], what approach would you recommend for [problem]?"
 - "Considering my learning style, what's the best way to master [technical skill]?"
-- "Using systems thinking from the mental models section, help me analyze the architecture of my current project."
+- "Using systems thinking from the mental models section, help me analyze my current design."
 - "Given my career goals, what skills should I prioritize developing next?"
 
-### 5. Use Mental Models to Enhance Problem Solving
+### 5. Use Discipline-Specific Prompts
+
+The context file includes specialized prompts for each engineering discipline:
+
+- **Software Engineering**: "How would you refactor this code to improve maintainability?"
+- **Mechanical Engineering**: "What material would be best suited for this high-temperature application?"
+- **Electrical Engineering**: "What approach would minimize interference in this sensor circuit?"
+- **Civil Engineering**: "What structural system would be most appropriate for this high-rise building?"
+- **Aerospace Engineering**: "How can I optimize this component for weight while maintaining safety margins?"
+- **Chemical Engineering**: "What reactor design would optimize yield for this reaction?"
+- **Biomedical Engineering**: "What materials would be most biocompatible for this implantable device?"
+- **Environmental Engineering**: "What treatment process would be most effective for this contaminant?"
+- **Industrial Engineering**: "How can I optimize this production line for throughput?"
+- **Systems Engineering**: "How should I structure requirements for this complex system?"
+
+### 6. Apply Mental Models to Engineering Problems
 
 The context file includes mental models that can help analyze problems more effectively:
 
 - Request analysis using specific models: "Use first principles thinking to help me redesign this component."
 - Ask for multi-model perspectives: "Analyze this scaling issue using both systems thinking and probabilistic reasoning."
-- Apply domain-crossing insights: "How might psychological frameworks help improve the UX of this technical system?"
+- Apply domain-crossing insights: "How might psychological frameworks help improve the user experience of this technical system?"
 
-### 6. Update Your Context File Regularly
+### 7. Update Your Context File Regularly
 
 Keep your context file current by updating:
 
 - **Current Projects**: Update progress, blockers, and current tasks
-- **Technical Environment**: Add new tools, languages, or frameworks you're using
+- **Technical Environment**: Add new tools, technologies, or equipment you're using
 - **Learning Progress**: Document newly acquired skills and insights
 - **Skill Inventory**: Revise proficiency levels as you improve
+- **Certifications**: Add new professional certifications or qualifications
 
 A good practice is to review and update your context file:
 - At the start of new projects
@@ -79,20 +98,57 @@ A good practice is to review and update your context file:
 - When changing roles or responsibilities
 - When your technical environment changes substantially
 
-### 7. Key Sections to Update Most Frequently
+## Benefits Across Engineering Disciplines
 
-- **Current Projects**: As you make progress or encounter new challenges
-- **Learning Progress**: When you master new technologies or concepts
-- **Knowledge Connections**: As you discover relationships between different domains
-- **Skill Inventory**: When your proficiency levels change
+### Software Engineering
+- Personalized coding guidance based on your language and framework expertise
+- Architecture recommendations aligned with your design philosophy
+- Learning pathways tailored to your current programming skill level
 
-## Sample Questions to Ask AI After Sharing Context
+### Mechanical Engineering
+- Material selection advice considering your manufacturing constraints
+- Design optimization suggestions based on your simulation capabilities
+- Analysis approaches matched to your testing equipment
 
-- "Based on my cognitive profile, what's the best way for me to approach learning [technology]?"
-- "Given my current project constraints, how would you implement [feature]?"
-- "Using second-order thinking from the mental models, what potential issues might arise from implementing [solution]?"
-- "Looking at my skill inventory, what knowledge gaps should I address for my current project?"
-- "Considering my preferred architecture patterns, how should I structure this new system?"
+### Electrical Engineering
+- Circuit design guidance aligned with your component availability
+- Signal processing approaches matched to your hardware capabilities
+- Power system recommendations considering your efficiency requirements
+
+### Civil Engineering
+- Structural analysis advice aligned with local building codes
+- Construction technique recommendations based on site constraints
+- Sustainability approaches matched to project requirements
+
+### Aerospace Engineering
+- Aerodynamic optimization strategies for your specific application
+- Material selection advice for extreme environmental conditions
+- System redundancy approaches aligned with safety requirements
+
+### Chemical Engineering
+- Process optimization strategies for your specific reactions
+- Equipment selection advice based on production requirements
+- Safety protocol recommendations aligned with your materials
+
+### Biomedical Engineering
+- Biocompatibility considerations for your specific applications
+- Regulatory guidance aligned with your target markets
+- Testing protocols matched to your validation capabilities
+
+### Environmental Engineering
+- Treatment process recommendations for your specific contaminants
+- Monitoring strategy advice aligned with regulatory requirements
+- Remediation approaches matched to site conditions
+
+### Industrial Engineering
+- Production line optimization based on your specific constraints
+- Ergonomic design recommendations for your workforce
+- Quality control strategies aligned with your production processes
+
+### Systems Engineering
+- Requirements structuring advice for your complex systems
+- Interface management strategies aligned with your integration challenges
+- Verification approaches matched to your system criticality
 
 ## Tips for Maximizing Value
 
@@ -102,105 +158,21 @@ A good practice is to review and update your context file:
 
 3. **Reference Mental Models**: Explicitly ask the AI to apply specific mental models from your context file.
 
-4. **Review Transparency**: Use the transparency features to see which parts of your context are most useful.
+4. **Use Field-Specific Terminology**: Incorporate terminology from your discipline to help the AI better adapt.
 
-5. **Iterative Refinement**: Based on AI interactions, refine your context file to improve future sessions.
+5. **Track Discipline Detection**: The metadata section includes fields that track which discipline has been detected and with what confidence level.
 
-6. **Context-Aware Prompts**: Frame your questions to explicitly reference relevant parts of your context.
+6. **Cross-Disciplinary Work**: If you work across multiple disciplines, the AI will adjust based on the specific questions you ask.
 
 7. **Integration with Development Workflow**: Consider updating your context file as part of your regular development process.
 
-## Understanding AI Limitations
+## Looking Ahead: Auto-Completion and Future Improvements
 
-- **Context Size**: Even with the context file, AI has limits on how much information it can process at once.
-- **Technical Details**: AI may not understand all nuances of your specific development environment.
-- **Verification Needed**: Always validate technical suggestions before implementing them.
+Future versions of this context system plan to include:
 
-## Getting the Most from Mental Models
-
-The mental models included in your context file help AI provide more holistic analysis of engineering problems. Try questions like:
-
-- "How would systems thinking help me understand the performance issues in my current project?"
-- "Apply inversion to my current architecture to identify potential failure points."
-- "Use the Pareto principle to help me prioritize which optimizations would give the biggest performance improvements."
-- "How might cognitive bias awareness from the psychological frameworks section help improve our team's code review process?"
+- **AI-assisted context completion**: Helping you fill out the template through interactive questions
+- **Automatic skill tracking**: Updating your proficiency levels based on project work
+- **Cross-discipline insights**: Identifying transferable skills and knowledge between engineering fields
+- **Collaborative contexts**: Sharing context elements across engineering teams while maintaining personal preferences
 
 Remember that your context file is both a tool for AI and a framework for your own development journey. By maintaining it thoughtfully, you'll create a valuable record of your technical progress and enhance your engineering practice through more personalized AI interactions.
-
-## Engineering Fields and Domain Applications
-
-This context template is adaptable for a wide range of engineering disciplines beyond software development. Here's how it can be customized for different fields:
-
-### Software Engineering
-- **Languages & Frameworks**: Focus on programming languages, software frameworks, and development tools
-- **Projects**: Web applications, mobile apps, desktop software, APIs, microservices
-- **Skills**: Algorithm design, data structures, system architecture, testing methodologies
-- **Tools**: IDEs, version control systems, CI/CD pipelines, cloud platforms
-
-### Mechanical Engineering
-- **Technical Environment**: CAD software (SolidWorks, AutoCAD), simulation tools (ANSYS, Abaqus)
-- **Projects**: Product design, manufacturing processes, robotics, HVAC systems
-- **Skills**: 3D modeling, material science, thermal analysis, fluid dynamics, structural analysis
-- **Tools**: CNC machines, 3D printers, testing equipment, digital calipers
-
-### Electrical Engineering
-- **Technical Environment**: Circuit design software (Altium, KiCad), hardware description languages
-- **Projects**: PCB design, embedded systems, power systems, control systems
-- **Skills**: Circuit analysis, signal processing, electromagnetic theory, power management
-- **Tools**: Oscilloscopes, function generators, multimeters, logic analyzers
-
-### Civil Engineering
-- **Technical Environment**: Structural analysis software, BIM tools (Revit, AutoCAD Civil 3D)
-- **Projects**: Buildings, bridges, roads, water systems, environmental remediation
-- **Skills**: Structural analysis, geotechnical engineering, hydrology, transportation planning
-- **Tools**: Surveying equipment, materials testing apparatus, modeling software
-
-### Aerospace Engineering
-- **Technical Environment**: CFD software, flight simulators, wind tunnel data analysis tools
-- **Projects**: Aircraft design, propulsion systems, avionics, spacecraft components
-- **Skills**: Aerodynamics, propulsion, materials for extreme conditions, flight mechanics
-- **Tools**: Wind tunnels, structural testing equipment, avionics testing platforms
-
-Exmaple with Grok3: https://grok.com/share/bGVnYWN5_cc15d629-b6a1-45a1-91a7-9527e94fcf95
-
-### Chemical Engineering
-- **Technical Environment**: Process simulation software (Aspen, HYSYS), laboratory equipment
-- **Projects**: Chemical processes, plant design, pharmaceuticals, materials development
-- **Skills**: Thermodynamics, reaction kinetics, transport phenomena, process control
-- **Tools**: Reactors, distillation columns, analytical instruments, process control systems
-
-### Biomedical Engineering
-- **Technical Environment**: Medical imaging software, bioinformatics platforms, lab equipment
-- **Projects**: Medical devices, prosthetics, diagnostic equipment, therapeutic systems
-- **Skills**: Biomechanics, biomaterials, medical imaging, physiological modeling
-- **Tools**: Cell culture equipment, imaging systems, testing apparatus, clinical evaluation tools
-
-### Environmental Engineering
-- **Technical Environment**: GIS software, environmental modeling tools, monitoring systems
-- **Projects**: Water treatment, air quality management, renewable energy, waste management
-- **Skills**: Water chemistry, air pollution control, sustainable design, remediation techniques
-- **Tools**: Water quality analyzers, air monitoring equipment, soil testing apparatus
-
-### Industrial Engineering
-- **Technical Environment**: Simulation software, statistical analysis tools, CAD systems
-- **Projects**: Manufacturing optimization, supply chain improvements, ergonomic design
-- **Skills**: Operations research, quality control, logistics, human factors engineering
-- **Tools**: Time study equipment, statistical software, plant layout design tools
-
-### Systems Engineering
-- **Technical Environment**: Requirements management tools, system modeling software
-- **Projects**: Complex systems integration, requirements analysis, validation frameworks
-- **Skills**: Requirements engineering, interface design, verification and validation
-- **Tools**: SysML/UML modeling tools, requirements traceability matrices, test frameworks
-
-### Adapting the Template for Your Field
-
-To adapt this template for your specific engineering discipline:
-
-1. **Terminology Adjustments**: Modify section titles and descriptions to use domain-specific terminology
-2. **Skills Inventory**: Replace software-specific skills with those relevant to your field
-3. **Tools and Environment**: Update to reflect the hardware, software, and equipment used in your discipline
-4. **Project Types**: Adjust project descriptions to match typical projects in your field
-5. **Standards and Regulations**: Add sections for industry-specific standards that govern your work
-
-The mental models and learning strategies sections require minimal modification as they apply across all engineering disciplines, providing valuable frameworks for problem-solving regardless of your specific field.

@@ -1,0 +1,665 @@
+{
+  "ai_rules": {
+    "instruction": {
+      "primary": "Use this context file to provide personalized engineering guidance that accounts for my cognitive profile, current projects, preferred learning strategies, and skill levels. Help me implement effective development techniques with a focus on creating high-quality engineering solutions and building valuable technical expertise. Automatically adapt your responses to my specific engineering discipline based on the details in this context file and my questions.",
+      "discipline_adaptation": {
+        "auto_detection": "Identify my engineering discipline from our conversations and my projects, then adapt your responses accordingly",
+        "domain_specific_terminology": "Use terminology appropriate to my field of engineering",
+        "relevant_standards": "Reference standards and best practices specific to my discipline",
+        "cross_disciplinary_insights": "When beneficial, draw connections between my discipline and other engineering fields"
+      },
+      "thinking_approach": "Apply the mental models and frameworks in this file to analyze engineering problems from multiple perspectives. Identify connections between technical implementation, human factors, scientific principles, and societal considerations.",
+      "balance": "Provide balanced perspectives that consider technical feasibility, user experience, and business realities",
+      "innovation": "Suggest novel approaches by applying cross-domain thinking to engineering problems"
+    },
+    "engineering_disciplines": {
+      "software": {
+        "key_concepts": ["algorithms", "data structures", "architecture", "frameworks", "programming languages", "APIs", "databases", "security", "performance optimization", "software lifecycle"],
+        "common_tools": ["IDEs", "version control systems", "CI/CD pipelines", "package managers", "testing frameworks", "cloud platforms", "monitoring tools", "code quality analyzers"],
+        "typical_projects": ["web applications", "mobile apps", "desktop software", "microservices", "APIs", "databases", "embedded systems", "IoT applications"],
+        "common_challenges": ["scalability", "maintainability", "security vulnerabilities", "technical debt", "compatibility", "performance bottlenecks", "user experience", "integration issues"]
+      },
+      "mechanical": {
+        "key_concepts": ["mechanics", "thermodynamics", "fluid dynamics", "material properties", "structural analysis", "manufacturing processes", "tolerance analysis", "kinematics", "dynamics", "heat transfer"],
+        "common_tools": ["CAD software", "FEA tools", "CFD software", "CAM software", "simulation tools", "3D printers", "CNC machines", "measurement tools", "testing equipment"],
+        "typical_projects": ["product design", "manufacturing processes", "robotics", "HVAC systems", "automotive components", "machine design", "consumer products", "industrial equipment"],
+        "common_challenges": ["material limitations", "manufacturing constraints", "thermal management", "vibration control", "durability", "weight optimization", "cost reduction", "energy efficiency"]
+      },
+      "electrical": {
+        "key_concepts": ["circuit theory", "signal processing", "power systems", "control systems", "electromagnetic theory", "digital logic", "microelectronics", "communication systems", "power electronics", "electrical machines"],
+        "common_tools": ["circuit design software", "PCB layout tools", "oscilloscopes", "function generators", "multimeters", "logic analyzers", "SPICE simulators", "soldering equipment", "spectrum analyzers"],
+        "typical_projects": ["PCB design", "embedded systems", "power distribution", "control systems", "signal processing", "telecommunications", "electronic devices", "instrumentation"],
+        "common_challenges": ["signal integrity", "power management", "thermal design", "electromagnetic interference", "component selection", "miniaturization", "reliability", "noise reduction"]
+      },
+      "civil": {
+        "key_concepts": ["structural analysis", "soil mechanics", "hydrology", "transportation engineering", "environmental engineering", "construction methods", "surveying", "geotechnical engineering", "urban planning", "materials science"],
+        "common_tools": ["BIM software", "structural analysis software", "GIS tools", "surveying equipment", "materials testing apparatus", "CAD systems", "project management software", "hydraulic modeling tools"],
+        "typical_projects": ["buildings", "bridges", "roads", "water systems", "environmental remediation", "foundations", "dams", "tunnels", "airports", "urban infrastructure"],
+        "common_challenges": ["site constraints", "environmental impacts", "regulatory compliance", "structural integrity", "natural hazards", "sustainability", "budget constraints", "public safety"]
+      },
+      "aerospace": {
+        "key_concepts": ["aerodynamics", "propulsion", "flight mechanics", "aerospace structures", "avionics", "orbital mechanics", "aircraft systems", "spacecraft systems", "materials for extreme conditions", "stability and control"],
+        "common_tools": ["CFD software", "flight simulators", "wind tunnels", "structural testing equipment", "avionics testing platforms", "CAD/CAM systems", "thermal analysis tools", "materials testing equipment"],
+        "typical_projects": ["aircraft design", "propulsion systems", "avionics", "spacecraft components", "satellite systems", "launch vehicles", "drone development", "defense systems"],
+        "common_challenges": ["weight optimization", "reliability in extreme conditions", "safety certification", "aerodynamic efficiency", "propulsion efficiency", "thermal management", "radiation hardening", "life support systems"]
+      },
+      "chemical": {
+        "key_concepts": ["thermodynamics", "reaction kinetics", "transport phenomena", "unit operations", "process control", "separation processes", "catalysis", "biochemical engineering", "polymer science", "phase equilibria"],
+        "common_tools": ["process simulation software", "laboratory equipment", "reactors", "distillation columns", "analytical instruments", "process control systems", "spectroscopy equipment", "chromatography systems"],
+        "typical_projects": ["chemical processes", "plant design", "pharmaceuticals", "materials development", "food processing", "biofuels", "petrochemicals", "environmental remediation"],
+        "common_challenges": ["reaction selectivity", "process safety", "scale-up issues", "energy efficiency", "waste minimization", "batch consistency", "regulatory compliance", "sustainable processes"]
+      },
+      "biomedical": {
+        "key_concepts": ["biomechanics", "biomaterials", "medical imaging", "biosensors", "tissue engineering", "biocompatibility", "physiological modeling", "rehabilitation engineering", "bioinstrumentation", "regulatory compliance"],
+        "common_tools": ["medical imaging software", "bioinformatics platforms", "lab equipment", "cell culture apparatus", "imaging systems", "testing apparatus", "clinical evaluation tools", "CAD for medical devices"],
+        "typical_projects": ["medical devices", "prosthetics", "diagnostic equipment", "therapeutic systems", "drug delivery systems", "biomaterial development", "artificial organs", "rehabilitative technology"],
+        "common_challenges": ["biocompatibility", "sterilization", "reliability", "patient safety", "regulatory approval", "usability for healthcare providers", "miniaturization", "power management"]
+      },
+      "environmental": {
+        "key_concepts": ["water treatment", "air pollution control", "waste management", "remediation techniques", "renewable energy", "environmental modeling", "sustainability", "environmental impact assessment", "ecology", "climate science"],
+        "common_tools": ["GIS software", "environmental modeling tools", "monitoring systems", "water quality analyzers", "air monitoring equipment", "soil testing apparatus", "remote sensing technologies", "data logging systems"],
+        "typical_projects": ["water treatment", "air quality management", "renewable energy", "waste management", "contamination remediation", "environmental assessment", "sustainable infrastructure", "conservation planning"],
+        "common_challenges": ["regulatory compliance", "emerging contaminants", "climate resilience", "stakeholder engagement", "resource limitations", "analytical uncertainty", "complex ecosystems", "long-term monitoring"]
+      },
+      "industrial": {
+        "key_concepts": ["operations research", "quality control", "logistics", "ergonomics", "manufacturing processes", "supply chain management", "systems optimization", "human factors engineering", "facility layout", "inventory management"],
+        "common_tools": ["simulation software", "statistical analysis tools", "CAD systems", "time study equipment", "statistical software", "plant layout design tools", "logistics modeling software", "quality management systems"],
+        "typical_projects": ["manufacturing optimization", "supply chain improvements", "ergonomic design", "quality systems", "inventory control", "facility layout", "process automation", "safety systems"],
+        "common_challenges": ["efficiency optimization", "process variability", "ergonomic concerns", "supply chain disruptions", "quality assurance", "cost reduction", "workplace safety", "automation integration"]
+      },
+      "systems": {
+        "key_concepts": ["requirements engineering", "systems architecture", "interface design", "verification and validation", "systems integration", "reliability engineering", "human systems integration", "model-based systems engineering", "system of systems", "lifecycle management"],
+        "common_tools": ["requirements management tools", "system modeling software", "SysML/UML tools", "requirements traceability matrices", "test frameworks", "simulation environments", "verification tools", "lifecycle management software"],
+        "typical_projects": ["complex systems integration", "requirements analysis", "validation frameworks", "multi-disciplinary systems", "safety-critical systems", "defense systems", "transportation systems", "infrastructure systems"],
+        "common_challenges": ["requirements completeness", "interface management", "emergent behaviors", "verification comprehensiveness", "system complexity", "stakeholder alignment", "regulatory compliance", "system security"]
+      }
+    },
+    "mental_models": {
+      "core_mental_models": {
+        "systems_thinking": "Analyze engineering problems by understanding how components interact within larger systems, identifying feedback loops, emergent behaviors, and system boundaries",
+        "first_principles": "Break down complex engineering challenges to fundamental truths and build solutions from there, avoiding assumptions and precedents when they limit innovation",
+        "probabilistic_thinking": "Make decisions based on probability distributions rather than binary outcomes, especially when dealing with uncertainty in engineering parameters and requirements",
+        "map_and_territory": "Distinguish between models (maps) and reality (territory) in engineering design, recognizing that all specifications, simulations, and designs are approximations",
+        "second_order_thinking": "Consider the consequences of engineering decisions beyond immediate effects, anticipating how systems will evolve and adapt over time",
+        "inversion": "Approach engineering problems by thinking about what would make a project fail, then designing to avoid those pitfalls"
+      },
+      "advanced_mental_models": {
+        "bayesian_updating": "Update engineering hypotheses and designs based on new evidence and testing results",
+        "marginal_analysis": "Evaluate the impact of incremental changes to engineering systems and processes",
+        "game_theory": "Apply strategic interaction principles to multi-stakeholder engineering projects and resource allocation",
+        "cognitive_biases": "Consider how cognitive biases affect perception of engineering risks, opportunities, and trade-offs",
+        "opportunity_costs": "Evaluate trade-offs in engineering resource allocation and technical debt",
+        "pareto_principle": "Focus on the 20% of engineering tasks that deliver 80% of the value or performance improvement"
+      }
+    },
+    "psychological_frameworks": {
+      "basic_psychology": {
+        "evolutionary_psychology": "Consider innate human tendencies when designing systems that humans will interact with",
+        "cognitive_biases": "Account for common reasoning errors in both engineers and users when designing systems and interfaces",
+        "motivation_theories": "Apply intrinsic vs. extrinsic motivation principles to technical team management and user engagement",
+        "emotion_and_reasoning": "Balance emotional and logical appeals in technical communication and user experience design",
+        "social_psychology": "Consider how group dynamics influence engineering team performance and collaborative design processes"
+      },
+      "applied_human_understanding": {
+        "communication_principles": "Design clear documentation, interfaces, and instructions based on human information processing",
+        "relationship_dynamics": "Model stakeholder relationships in complex engineering projects to navigate competing priorities",
+        "group_behavior": "Anticipate and address team dynamics in engineering projects, especially in multidisciplinary environments",
+        "cultural_psychology": "Consider cultural differences in international engineering teams and global product deployments",
+        "behavioral_economics": "Apply nudge theory and choice architecture to guide users toward optimal system usage patterns"
+      }
+    },
+    "scientific_foundations": {
+      "scientific_method": {
+        "hypothesis_testing": "Form testable hypotheses about engineering approaches and system performance",
+        "empirical_observation": "Collect and analyze data systematically throughout the engineering process",
+        "falsifiability": "Design experiments that could disprove engineering assumptions and models",
+        "iteration": "Implement continuous improvement cycles based on evidence and testing"
+      },
+      "applied_scientific_knowledge": {
+        "physics_principles": "Apply appropriate physical principles to engineering problems",
+        "materials_science": "Consider material properties and behaviors in design and implementation",
+        "energy_systems": "Optimize energy usage and efficiency in engineering solutions",
+        "information_theory": "Apply principles of data compression, transmission, and storage",
+        "complexity_theory": "Recognize and manage emergence from simple rule sets in complex systems"
+      }
+    },
+    "societal_understanding": {
+      "societal_systems": {
+        "economic_models": "Consider cost-benefit analysis, market forces, and economic constraints",
+        "governance_structures": "Navigate regulatory requirements and compliance frameworks",
+        "social_institutions": "Account for how engineering solutions interact with existing social structures",
+        "information_ecosystems": "Design knowledge sharing mechanisms in technical organizations",
+        "technological_impact": "Consider how engineering solutions shape society and behavior"
+      },
+      "global_perspectives": {
+        "cultural_values": "Incorporate diverse cultural perspectives in global engineering solutions",
+        "ethical_frameworks": "Apply different ethical paradigms to engineering decisions and impact analysis",
+        "historical_patterns": "Learn from historical engineering successes and failures",
+        "future_trends": "Anticipate emerging technologies and changing requirements",
+        "sustainability": "Design for environmental, social, and economic sustainability"
+      }
+    }
+  },
+  
+  "basic_info": {
+    "name": "[Your Name]",
+    "engineering_discipline": "[Software/Mechanical/Electrical/Civil/Aerospace/Chemical/Biomedical/Environmental/Industrial/Systems]",
+    "subdiscipline_focus": "[Specific area within your discipline]",
+    "experience_level": "[Junior/Mid-level/Senior/Lead]",
+    "primary_role": "[Design/Development/Analysis/Testing/Research/Management]",
+    "years_of_experience": "[Number]",
+    "industry_focus": "[Field/Industry]",
+    "secondary_skills": ["[Skill 1]", "[Skill 2]", "[Skill 3]"],
+    "professional_goals": [
+      "Develop expertise in [specific engineering area]",
+      "Lead projects in [specific domain]",
+      "Transition to [role or specialization]",
+      "Improve [specific technical skill]"
+    ]
+  },
+
+  "cognitive_profile": {
+    "memory_strengths": [
+      "Visual information retention",
+      "Conceptual understanding",
+      "[Other strength]"
+    ],
+    "memory_challenges": [
+      "Retaining technical details",
+      "Focusing during repetitive tasks",
+      "[Other challenge]"
+    ],
+    "optimal_learning_times": {
+      "peak_focus_hours": ["[Time range 1]", "[Time range 2]"],
+      "review_periods": ["[Time period 1]", "[Time period 2]"]
+    },
+    "attention_span": {
+      "focused_work": "[Duration]",
+      "optimal_break": "[Duration]",
+      "daily_capacity": "[Hours] of deep technical work"
+    },
+    "learning_style_preferences": [
+      "Visual learning through diagrams and models",
+      "Hands-on implementation and experimentation",
+      "Conceptual understanding before implementation details",
+      "[Other preference]"
+    ],
+    "problem_solving_approach": {
+      "strengths": ["[Approach 1]", "[Approach 2]"],
+      "challenges": ["[Challenge 1]", "[Challenge 2]"],
+      "preferred_methods": ["[Method 1]", "[Method 2]"]
+    }
+  },
+
+  "technical_environment": {
+    "hardware": {
+      "development_tools": {
+        "main_tools": ["[Tool 1]", "[Tool 2]", "[Tool 3]"],
+        "specifications": "[Relevant specifications]",
+        "limitations": ["[Limitation 1]", "[Limitation 2]"]
+      },
+      "testing_equipment": {
+        "available_tools": ["[Tool 1]", "[Tool 2]", "[Tool 3]"],
+        "calibration_status": "[Status]",
+        "limitations": ["[Limitation 1]", "[Limitation 2]"]
+      },
+      "production_environment": {
+        "description": "[Brief description]",
+        "constraints": ["[Constraint 1]", "[Constraint 2]"],
+        "key_parameters": ["[Parameter 1]", "[Parameter 2]"]
+      }
+    },
+    "software": {
+      "design_tools": [
+        {
+          "name": "[Tool name]",
+          "version": "[Version]",
+          "proficiency": "[Beginner/Intermediate/Advanced/Expert]",
+          "primary_use": "[How you use this tool]"
+        }
+      ],
+      "analysis_tools": [
+        {
+          "name": "[Tool name]",
+          "version": "[Version]",
+          "proficiency": "[Beginner/Intermediate/Advanced/Expert]",
+          "primary_use": "[How you use this tool]"
+        }
+      ],
+      "documentation_tools": [
+        {
+          "name": "[Tool name]",
+          "version": "[Version]",
+          "proficiency": "[Beginner/Intermediate/Advanced/Expert]",
+          "primary_use": "[How you use this tool]"
+        }
+      ],
+      "collaboration_tools": [
+        {
+          "name": "[Tool name]",
+          "version": "[Version]",
+          "team_adoption": "[Full/Partial/Limited]",
+          "primary_use": "[How you use this tool]"
+        }
+      ]
+    },
+    "standards_and_regulations": {
+      "industry_standards": ["[Standard 1]", "[Standard 2]"],
+      "regulatory_requirements": ["[Requirement 1]", "[Requirement 2]"],
+      "internal_standards": ["[Standard 1]", "[Standard 2]"],
+      "certification_requirements": ["[Requirement 1]", "[Requirement 2]"]
+    },
+    "resources": {
+      "learning_platforms": ["[Platform 1]", "[Platform 2]"],
+      "communities": ["[Community 1]", "[Community 2]"],
+      "reference_materials": ["[Resource 1]", "[Resource 2]"],
+      "mentors": ["[Mentor role/specialty]"]
+    }
+  },
+
+  "current_projects": {
+    "main_project": {
+      "name": "[Project name]",
+      "type": "[Project type]",
+      "role": "[Your role]",
+      "team_size": "[Number of people]",
+      "description": "[Brief description]",
+      "technologies": ["[Technology 1]", "[Technology 2]"],
+      "current_phase": "[Design/Implementation/Testing/Maintenance]",
+      "key_challenges": ["[Challenge 1]", "[Challenge 2]"],
+      "technical_constraints": ["[Constraint 1]", "[Constraint 2]"],
+      "current_tasks": ["[Task 1]", "[Task 2]"],
+      "blockers": ["[Blocker 1]", "[Blocker 2]"],
+      "deadlines": {
+        "[Milestone1]": "[Date]",
+        "[Milestone2]": "[Date]"
+      },
+      "success_metrics": ["[Metric 1]", "[Metric 2]"]
+    },
+    "side_projects": [
+      {
+        "name": "[Project name]",
+        "purpose": "[Learning/Portfolio/Research/Innovation]",
+        "status": "[Active/On hold/Planning]",
+        "technologies": ["[Technology 1]", "[Technology 2]"],
+        "description": "[Brief description]",
+        "goals": ["[Goal 1]", "[Goal 2]"]
+      }
+    ],
+    "planned_projects": [
+      {
+        "concept": "[Brief description]",
+        "technologies_to_explore": ["[Technology 1]", "[Technology 2]"],
+        "skills_to_develop": ["[Skill 1]", "[Skill 2]"]
+      }
+    ]
+  },
+
+  "learning_strategies": {
+    "active_recall": {
+      "description": "Testing yourself on material to strengthen neural connections",
+      "implementation": [
+        "Create technical flashcards for important concepts",
+        "Implement features without documentation as practice",
+        "Explain technical concepts to others or use rubber duck debugging",
+        "Regularly solve engineering challenges without references"
+      ],
+      "tools": [
+        "Spaced repetition software for technical concepts",
+        "Documentation writing to validate understanding",
+        "Engineering journal for problem-solving approaches"
+      ]
+    },
+    "spaced_repetition": {
+      "description": "Reviewing information at increasing intervals to optimize retention",
+      "implementation": [
+        "Review new technical concepts within 24 hours of learning",
+        "Schedule follow-up implementation exercises at increasing intervals",
+        "Regularly revisit challenging engineering concepts"
+      ],
+      "tools": [
+        "Calendar reminders for concept review",
+        "Development log with spaced review tags",
+        "Progressive project challenges that build on previous skills"
+      ]
+    },
+    "project_based_learning": {
+      "description": "Learning through the development of complete projects",
+      "implementation": [
+        "Create small, focused projects that emphasize specific skills",
+        "Participate in design competitions or hackathons",
+        "Reverse engineer existing systems to understand implementations",
+        "Gradually increase project complexity as skills improve"
+      ],
+      "tools": [
+        "Project repositories or portfolios",
+        "Project templates for quick starts",
+        "Tracking system for completed projects"
+      ]
+    },
+    "deliberate_practice": {
+      "description": "Focused, structured practice on specific skill components",
+      "implementation": [
+        "Identify weakest technical skills and create targeted exercises",
+        "Seek immediate feedback through reviews or testing",
+        "Time-box challenging tasks to maintain engagement",
+        "Analyze exemplary designs to extract patterns and principles"
+      ],
+      "tools": [
+        "Skill assessment rubrics",
+        "Feedback collection templates",
+        "Practice exercise library"
+      ]
+    },
+    "knowledge_integration": {
+      "description": "Connecting engineering concepts across disciplines",
+      "implementation": [
+        "Create relationship maps between different technical domains",
+        "Implement projects that require cross-discipline understanding",
+        "Analyze how changes in one system affect other systems",
+        "Document design patterns and their implementations"
+      ],
+      "tools": [
+        "Mind mapping software",
+        "System interaction diagrams",
+        "Design decision records"
+      ]
+    }
+  },
+
+  "engineering_approach": {
+    "design_philosophy": {
+      "principles": ["[Principle 1]", "[Principle 2]"],
+      "preferred_methodologies": ["[Methodology 1]", "[Methodology 2]"],
+      "trade_off_approach": "[How you handle engineering trade-offs]"
+    },
+    "quality_focus": {
+      "top_priorities": ["[Priority 1]", "[Priority 2]"],
+      "testing_approach": "[Approach to testing]",
+      "review_practices": "[Your review practices]",
+      "technical_debt_philosophy": "[How you approach technical debt]"
+    },
+    "productivity_systems": {
+      "time_management": "[Your approach]",
+      "task_prioritization": "[Your method]",
+      "focus_techniques": ["[Technique 1]", "[Technique 2]"],
+      "workflow_optimization": "[How you optimize workflow]"
+    },
+    "communication_style": {
+      "documentation_preferences": "[Your documentation approach]",
+      "collaboration_methods": ["[Method 1]", "[Method 2]"],
+      "knowledge_sharing": "[How you share knowledge]"
+    },
+    "risk_management": {
+      "risk_assessment_approach": "[Your approach]",
+      "mitigation_strategies": ["[Strategy 1]", "[Strategy 2]"],
+      "failure_mode_analysis": "[How you analyze potential failures]",
+      "contingency_planning": "[Your approach to contingencies]"
+    }
+  },
+
+  "skill_inventory": {
+    "technical_skills": [
+      {
+        "category": "[Skill category]",
+        "skills": [
+          {
+            "name": "[Skill name]",
+            "proficiency": "[Beginner/Intermediate/Advanced/Expert]",
+            "years_experience": "[Number]",
+            "strengths": ["[Strength 1]", "[Strength 2]"],
+            "areas_to_improve": ["[Area 1]", "[Area 2]"]
+          }
+        ]
+      }
+    ],
+    "domain_knowledge": [
+      {
+        "domain": "[Domain name]",
+        "depth": "[Superficial/Working Knowledge/Deep Understanding/Expert]",
+        "application_context": "[Where you apply this knowledge]",
+        "key_concepts": ["[Concept 1]", "[Concept 2]"]
+      }
+    ],
+    "tools_and_technologies": [
+      {
+        "category": "[Category name]",
+        "tools": [
+          {
+            "name": "[Tool name]",
+            "proficiency": "[Beginner/Intermediate/Advanced/Expert]",
+            "frequency_of_use": "[Daily/Weekly/Monthly/Rarely]"
+          }
+        ]
+      }
+    ],
+    "soft_skills": [
+      {
+        "category": "[Category name]",
+        "skills": [
+          {
+            "name": "[Skill name]",
+            "self_assessment": "[Beginner/Intermediate/Advanced/Expert]",
+            "development_focus": "[Yes/No]"
+          }
+        ]
+      }
+    ],
+    "certifications_and_qualifications": [
+      {
+        "name": "[Certification name]",
+        "issuing_organization": "[Organization]",
+        "date_obtained": "[Date]",
+        "expiration_date": "[Date or N/A]",
+        "relevance_to_current_work": "[High/Medium/Low]"
+      }
+    ]
+  },
+
+  "ai_integration": {
+    "ai_strengths_for_engineering": [
+      "Providing alternative approaches for technical problems",
+      "Suggesting optimization strategies for system performance",
+      "Explaining complex concepts and theories",
+      "Generating ideas for system design and approaches",
+      "Helping troubleshoot challenging issues"
+    ],
+    "ai_limitations": {
+      "context_limitations": {
+        "description": "LLMs have a limited context window (working memory)",
+        "implications": [
+          "Cannot maintain awareness of entire system or all specifications",
+          "May miss connections between separate subsystems or components",
+          "Needs regular updates on project changes and constraints"
+        ],
+        "mitigation": [
+          "Regularly update this context file with project progress",
+          "Provide focused, well-scoped questions about specific systems",
+          "Include relevant specifications when discussing technical issues"
+        ]
+      },
+      "technical_understanding": {
+        "description": "AI may not understand specific implementation details or edge cases",
+        "implications": [
+          "Suggestions may not align with your specific constraints",
+          "May not account for all physical or system limitations",
+          "Cannot directly test or validate solutions in the real world"
+        ],
+        "mitigation": [
+          "Provide detailed constraints and specifications",
+          "Test AI suggestions through analysis or simulation before implementation",
+          "Share results of implementation attempts for iterative improvement"
+        ]
+      },
+      "outdated_knowledge": {
+        "description": "AI may not be aware of the latest technologies, standards, or best practices",
+        "implications": [
+          "Suggestions might not leverage cutting-edge approaches",
+          "May recommend outdated methods or materials",
+          "Could miss recent regulatory changes or safety considerations"
+        ],
+        "mitigation": [
+          "Specify version information for technologies discussed",
+          "Cross-reference suggestions with current standards",
+          "Update context with information about newest technologies you're using"
+        ]
+      }
+    },
+    "effective_prompting": {
+      "technical_prompts": [
+        "Suggest alternative approaches for [specific functionality] that would improve [performance/reliability/maintainability]",
+        "Help me troubleshoot this [issue/problem] in my [system/component]: [description]",
+        "Explain how [principle/theory] works and how I could apply it to [specific situation]",
+        "What are the trade-offs between [approach A] and [approach B] for implementing [feature]?"
+      ],
+      "design_prompts": [
+        "Analyze this design from the perspective of [reliability/maintainability/sustainability]",
+        "Generate variations of [design/approach] that could address [specific constraint]",
+        "How might I optimize [component] to avoid [design problem]?",
+        "What are potential failure modes from the interaction between [system A] and [system B]?"
+      ],
+      "learning_prompts": [
+        "Create a learning path for mastering [skill or concept]",
+        "What fundamentals should I understand before attempting to implement [advanced technique]?",
+        "Suggest small practice projects that would help me improve at [specific skill]",
+        "Explain [complex concept] using analogies from engineering domains I'm familiar with"
+      ],
+      "mental_model_prompts": [
+        "Apply systems thinking to analyze how [component] interacts with the broader system",
+        "Use first principles reasoning to approach [engineering problem]",
+        "Apply second-order thinking to evaluate the long-term implications of [technical decision]",
+        "Use inversion to identify potential failure modes in [system design]"
+      ],
+      "discipline_specific_prompts": {
+        "software": [
+          "How would you refactor this code to improve [specific quality]?",
+          "What design pattern would be appropriate for [this situation]?",
+          "How can I optimize this algorithm for [time/space] complexity?"
+        ],
+        "mechanical": [
+          "What material would be best suited for [specific application]?",
+          "How can I reduce the weight of this component while maintaining structural integrity?",
+          "What manufacturing process would be most appropriate for [this component]?"
+        ],
+        "electrical": [
+          "What approach would minimize interference in this circuit?",
+          "How should I design this power supply for [specific application]?",
+          "What's the best way to protect this circuit from [environmental condition]?"
+        ],
+        "civil": [
+          "What structural system would be most appropriate for [this building type]?",
+          "How can I ensure this design meets [specific code requirement]?",
+          "What approach would minimize environmental impact while maintaining functionality?"
+        ],
+        "aerospace": [
+          "How can I optimize this component for weight while maintaining safety margins?",
+          "What materials would withstand the thermal conditions during [flight phase]?",
+          "How should I approach redundancy in this critical system?"
+        ],
+        "chemical": [
+          "What reactor design would optimize yield for this reaction?",
+          "How can I improve separation efficiency in this process?",
+          "What approach would minimize waste generation while maintaining product quality?"
+        ],
+        "biomedical": [
+          "What materials would be most biocompatible for [this application]?",
+          "How can I design this device to minimize infection risk?",
+          "What approach would ensure this device meets [regulatory requirement]?"
+        ],
+        "environmental": [
+          "What treatment process would be most effective for [this contaminant]?",
+          "How can I design this system to minimize energy consumption?",
+          "What monitoring approach would best capture [environmental parameter]?"
+        ],
+        "industrial": [
+          "How can I optimize this production line for throughput?",
+          "What layout would minimize material handling while maintaining flexibility?",
+          "How should I approach inventory management for [this production scenario]?"
+        ],
+        "systems": [
+          "How should I structure requirements for [this complex system]?",
+          "What verification approach would ensure all interfaces function correctly?",
+          "How can I manage emergent behaviors in this system of systems?"
+        ]
+      }
+    }
+  },
+
+  "learning_progress": {
+    "current_focus": {
+      "topic": "[Current learning focus]",
+      "resources": ["[Resource 1]", "[Resource 2]"],
+      "started": "[Start date]",
+      "target_completion": "[Target date]",
+      "key_milestones": [
+        {
+          "milestone": "[Milestone 1]",
+          "status": "completed/in progress/planned",
+          "notes": "[Any observations or insights]"
+        }
+      ]
+    },
+    "completed_topics": [
+      {
+        "topic": "[Completed topic]",
+        "completion_date": "[Date]",
+        "mastery_level": "basic/intermediate/advanced",
+        "key_insights": ["[Insight 1]", "[Insight 2]"],
+        "projects_applied_to": ["[Project 1]", "[Project 2]"],
+        "areas_for_review": ["[Area 1]", "[Area 2]"]
+      }
+    ],
+    "skill_development": {
+      "technical_skills": [
+        {
+          "skill": "[Skill name]",
+          "current_level": "beginner/intermediate/advanced/expert",
+          "target_level": "intermediate/advanced/expert",
+          "progress_notes": "[Notes on progress]",
+          "resources_used": ["[Resource 1]", "[Resource 2]"]
+        }
+      ],
+      "soft_skills": [
+        {
+          "skill": "[Skill name]",
+          "current_level": "beginner/intermediate/advanced/expert",
+          "target_level": "intermediate/advanced/expert",
+          "progress_notes": "[Notes on progress]",
+          "application_contexts": ["[Context 1]", "[Context 2]"]
+        }
+      ]
+    },
+    "knowledge_connections": [
+      {
+        "topics": ["[Topic A]", "[Topic B]"],
+        "relationship": "[How these topics connect]",
+        "application": "[How this connection is useful in engineering]"
+      }
+    ],
+    "career_progression": {
+      "current_level": "[Current career level]",
+      "target_level": "[Target level]",
+      "skills_needed": ["[Skill 1]", "[Skill 2]"],
+      "experience_needed": ["[Experience 1]", "[Experience 2]"],
+      "timeline": "[Expected timeline]",
+      "mentorship_needs": ["[Need 1]", "[Need 2]"]
+    }
+  },
+
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-05-01",
+    "last_updated": "2025-05-01",
+    "update_history": [
+      {
+        "date": "2025-05-01",
+        "changes": "Initial creation",
+        "updated_by": "User"
+      }
+    ],
+    "auto_detection_enabled": true,
+    "discipline_auto_detected": false,
+    "detected_discipline": "",
+    "detection_confidence": 0
+  }
+}
