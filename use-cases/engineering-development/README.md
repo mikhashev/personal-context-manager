@@ -12,6 +12,7 @@ The adaptive engineering context file is a structured JSON document that:
 - Maps your cognitive strengths and preferred learning strategies
 - Documents your development environment and technical constraints
 - Includes mental models and frameworks for analyzing engineering problems
+- Features transparency controls to show how your context influences responses
 
 The file is designed to make AI interactions more personalized, relevant, and effective for engineering work across multiple disciplines including software, mechanical, electrical, civil, aerospace, chemical, biomedical, environmental, industrial, and systems engineering.
 
@@ -38,7 +39,21 @@ Hello! I'd like to share my adaptive engineering context file to help you provid
 Please confirm you've received this context and will use it to guide our session.
 ```
 
-### 3. Let AI Detect Your Engineering Discipline
+### 3. Use Transparency Features to Understand Context Usage
+
+The context file includes transparency features that provide visibility into how the AI is using your information:
+
+- **Pre-Response Disclosure**: Before answering, the AI shows which parts of your context it plans to use
+- **Inline Citations**: References to your context data are clearly marked in responses with `[PC: path.to.data]`
+- **Post-Response Verification**: After responding, the AI can verify which context elements were actually used
+- **Configurable Transparency Levels**:
+  - Full: All transparency features (pre-disclosure, citations, post-verification)
+  - Standard: Pre-disclosure and citations (default)
+  - Minimal: Only citations
+  
+You can adjust the transparency level by modifying the `ai_rules.instruction.transparency.activation_levels.current_setting` value in your context file.
+
+### 4. Let AI Detect Your Engineering Discipline
 
 The context file includes a comprehensive database of terminology, tools, and challenges for 10 different engineering disciplines. The AI will:
 
@@ -160,11 +175,13 @@ A good practice is to review and update your context file:
 
 4. **Use Field-Specific Terminology**: Incorporate terminology from your discipline to help the AI better adapt.
 
-5. **Track Discipline Detection**: The metadata section includes fields that track which discipline has been detected and with what confidence level.
+5. **Leverage Transparency Features**: Review the context usage information to see which parts of your context are most valuable and which might need enhancement.
 
-6. **Cross-Disciplinary Work**: If you work across multiple disciplines, the AI will adjust based on the specific questions you ask.
+6. **Track Discipline Detection**: The metadata section includes fields that track which discipline has been detected and with what confidence level.
 
-7. **Integration with Development Workflow**: Consider updating your context file as part of your regular development process.
+7. **Cross-Disciplinary Work**: If you work across multiple disciplines, the AI will adjust based on the specific questions you ask.
+
+8. **Integration with Development Workflow**: Consider updating your context file as part of your regular development process.
 
 ## Looking Ahead: Auto-Completion and Future Improvements
 
