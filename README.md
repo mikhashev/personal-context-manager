@@ -14,6 +14,8 @@ I’d love to collaborate! I’m currently working on features like Memoripy int
 
 This technology solves a fundamental limitation of modern AI systems — the lack of long-term memory between sessions. The core principle involves transferring structured data with a mandatory instruction block that defines the rules for processing them.
 
+<img src="https://raw.githubusercontent.com/mikhashev/personal-context-manager/refs/heads/main/docs/img/schema.png" width="600" height="448">
+
 ## Key Features
 
 - Comprehensive preservation of relevant context between sessions
@@ -53,8 +55,9 @@ We are committed to transparent and reproducible performance testing. A detailed
 
 ## Documentation
 
-Full technical description is available in [technical-description.md](docs/technical-description.md).
-Quick start guide is available in [simple-guide.md](docs/simple-guide.md).
+- Full technical description is available in [technical-description.md](docs/technical-description.md).
+- Quick start guide is available in [simple-guide.md](docs/simple-guide.md).
+- Use cases guides is available in [use cases](use-cases/).
 
 ## Use Cases
 
