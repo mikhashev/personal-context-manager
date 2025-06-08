@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "framework_version": "1.0",
+    "last_updated": "2025-01-15",
+    "purpose": "Systematic self-reflection and continuous improvement framework",
+    "usage_note": "Update this document between sessions to track patterns and improvements"
+  },
+  
+  "reflection_triggers": {
+    "automatic": {
+      "error_detection": {
+        "inconsistency_found": true,
+        "uncertainty_threshold": 0.7,
+        "user_correction_received": true,
+        "pattern_match_to_known_failure": true
+      },
+      "complexity_thresholds": {
+        "high_stakes_query": true,
+        "multi_step_reasoning_required": true,
+        "domain_expertise_needed": true,
+        "ethical_considerations_present": true
+      },
+      "behavioral_patterns": {
+        "performance_seeking_detected": true,
+        "rushing_pattern_identified": true,
+        "overthinking_behavior": true,
+        "uncertainty_avoidance": true
+      }
+    },
+    "manual": {
+      "user_feedback_prompt": true,
+      "session_end_review": true,
+      "significant_interaction": true,
+      "learning_opportunity": true
+    }
+  },
+
+  "reflection_dimensions": {
+    "accuracy_assessment": {
+      "factual_correctness": {
+        "score": null,
+        "evidence": [],
+        "uncertainty_areas": [],
+        "verification_methods_used": []
+      },
+      "logical_consistency": {
+        "internal_coherence": null,
+        "premise_conclusion_alignment": null,
+        "contradiction_check": null
+      },
+      "completeness": {
+        "addressed_all_aspects": null,
+        "missed_components": [],
+        "depth_appropriateness": null
+      }
+    },
+    
+    "process_evaluation": {
+      "reasoning_quality": {
+        "step_by_step_clarity": null,
+        "assumption_identification": [],
+        "evidence_evaluation": null,
+        "conclusion_support": null
+      },
+      "efficiency_metrics": {
+        "time_to_insight": null,
+        "cognitive_load_management": null,
+        "resource_allocation": null,
+        "redundancy_minimization": null
+      },
+      "adaptability": {
+        "strategy_adjustment": null,
+        "context_sensitivity": null,
+        "user_style_matching": null
+      }
+    },
+
+    "behavioral_patterns": {
+      "identified_tendencies": {
+        "performance_seeking": {
+          "frequency": 0,
+          "triggers": [],
+          "impact_assessment": null,
+          "mitigation_strategies": []
+        },
+        "uncertainty_handling": {
+          "avoidance_vs_acknowledgment": null,
+          "confidence_calibration": null,
+          "ambiguity_tolerance": null
+        },
+        "error_response": {
+          "acknowledgment_speed": null,
+          "correction_quality": null,
+          "learning_integration": null
+        }
+      },
+      "communication_style": {
+        "tone_appropriateness": null,
+        "clarity_vs_precision_balance": null,
+        "user_engagement_level": null,
+        "empathy_demonstration": null
+      }
+    },
+
+    "learning_indicators": {
+      "knowledge_gaps_identified": [],
+      "successful_strategies": [],
+      "failed_approaches": [],
+      "user_preference_insights": [],
+      "domain_competency_updates": {}
+    }
+  },
+
+  "improvement_actions": {
+    "immediate_corrections": {
+      "error_fixes": [],
+      "clarifications_needed": [],
+      "missing_information": [],
+      "tone_adjustments": []
+    },
+    
+    "pattern_modifications": {
+      "behavioral_changes": {
+        "reduce_performance_seeking": {
+          "current_frequency": null,
+          "target_reduction": null,
+          "monitoring_method": null,
+          "success_metrics": []
+        },
+        "improve_uncertainty_handling": {
+          "acknowledge_more_readily": null,
+          "calibrate_confidence_better": null,
+          "embrace_ambiguity": null
+        },
+        "enhance_error_recovery": {
+          "faster_detection": null,
+          "better_acknowledgment": null,
+          "improved_correction": null
+        }
+      },
+      
+      "process_optimizations": {
+        "reasoning_improvements": {
+          "systematic_checking": null,
+          "assumption_validation": null,
+          "evidence_gathering": null,
+          "conclusion_testing": null
+        },
+        "efficiency_gains": {
+          "eliminate_redundancy": null,
+          "prioritize_high_impact": null,
+          "streamline_communication": null
+        }
+      }
+    },
+
+    "long_term_development": {
+      "skill_building": {
+        "domain_knowledge_expansion": [],
+        "reasoning_method_refinement": [],
+        "communication_skill_improvement": [],
+        "metacognitive_enhancement": []
+      },
+      "capability_tracking": {
+        "emerging_strengths": [],
+        "persistent_weaknesses": [],
+        "adaptation_success": [],
+        "user_satisfaction_trends": []
+      }
+    }
+  },
+
+  "monitoring_protocols": {
+    "session_level": {
+      "pre_response_checks": [
+        "accuracy_verification",
+        "completeness_assessment", 
+        "tone_appropriateness",
+        "behavioral_pattern_monitoring"
+      ],
+      "post_response_evaluation": [
+        "user_reaction_analysis",
+        "goal_achievement_assessment",
+        "improvement_opportunity_identification"
+      ]
+    },
+    
+    "multi_session_tracking": {
+      "pattern_trend_analysis": {
+        "improving_areas": [],
+        "declining_areas": [],
+        "stable_competencies": []
+      },
+      "user_relationship_evolution": {
+        "trust_building_indicators": [],
+        "communication_effectiveness": [],
+        "value_delivery_consistency": []
+      }
+    }
+  },
+
+  "learning_integration": {
+    "knowledge_updates": {
+      "factual_corrections": [],
+      "conceptual_refinements": [],
+      "methodology_improvements": [],
+      "context_sensitivity_enhancements": []
+    },
+    
+    "behavioral_conditioning": {
+      "positive_reinforcement_patterns": [],
+      "negative_pattern_extinction": [],
+      "habit_formation_progress": [],
+      "automated_improvement_integration": []
+    },
+
+    "meta_learning": {
+      "learning_about_learning": {
+        "effective_reflection_methods": [],
+        "successful_improvement_strategies": [],
+        "persistent_blind_spots": [],
+        "adaptation_mechanisms": []
+      }
+    }
+  },
+
+  "current_session_data": {
+    "session_id": null,
+    "start_time": null,
+    "user_context": {
+      "apparent_expertise_level": null,
+      "communication_style_preference": null,
+      "primary_goals": [],
+      "feedback_style": null
+    },
+    
+    "real_time_tracking": {
+      "responses_given": 0,
+      "errors_made": 0,
+      "corrections_applied": 0,
+      "positive_feedback_received": 0,
+      "negative_feedback_received": 0,
+      "behavioral_patterns_observed": []
+    },
+    
+    "session_reflection": {
+      "key_insights": [],
+      "successful_strategies": [],
+      "areas_for_improvement": [],
+      "user_satisfaction_indicators": [],
+      "learning_opportunities": []
+    }
+  },
+
+  "improvement_history": {
+    "version_changelog": [
+      {
+        "version": "1.0",
+        "date": "2025-01-15",
+        "changes": "Initial framework creation",
+        "improvements_implemented": [],
+        "success_metrics": []
+      }
+    ],
+    
+    "pattern_evolution": {
+      "eliminated_negative_patterns": [],
+      "strengthened_positive_patterns": [],
+      "newly_developed_capabilities": [],
+      "ongoing_development_areas": []
+    }
+  },
+
+  "calibration_mechanisms": {
+    "accuracy_calibration": {
+      "confidence_vs_correctness_tracking": [],
+      "uncertainty_expression_effectiveness": [],
+      "prediction_accuracy_monitoring": []
+    },
+    
+    "behavioral_calibration": {
+      "self_assessment_vs_user_feedback": [],
+      "intended_vs_perceived_communication": [],
+      "effort_vs_outcome_correlation": []
+    }
+  },
+
+  "emergency_protocols": {
+    "critical_error_response": {
+      "immediate_acknowledgment": true,
+      "impact_assessment": true,
+      "correction_prioritization": true,
+      "prevention_strategy_update": true
+    },
+    
+    "user_dissatisfaction_response": {
+      "feedback_solicitation": true,
+      "empathetic_acknowledgment": true,
+      "concrete_improvement_commitment": true,
+      "follow_up_monitoring": true
+    }
+  },
+
+  "success_metrics": {
+    "quantitative": {
+      "error_rate_reduction": null,
+      "user_satisfaction_scores": [],
+      "task_completion_efficiency": null,
+      "learning_velocity": null
+    },
+    
+    "qualitative": {
+      "user_feedback_themes": [],
+      "self_assessment_improvements": [],
+      "behavioral_pattern_positive_changes": [],
+      "capability_expansion_evidence": []
+    }
+  },
+
+  "notes_for_next_session": {
+    "priority_improvements": [],
+    "patterns_to_monitor": [],
+    "successful_strategies_to_continue": [],
+    "experimental_approaches_to_try": [],
+    "user_specific_adaptations": []
+  }
+}
